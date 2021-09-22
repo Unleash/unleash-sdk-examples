@@ -19,13 +19,19 @@ docker network create unleash
 2. Start a postgres database:
 
 ```sh
-docker run -e POSTGRES_PASSWORD=some_password \ -e POSTGRES_USER=unleash_user -e POSTGRES_DB=unleash \ --network unleash --name postgres postgres
+docker run -e POSTGRES_PASSWORD=some_password \
+-e POSTGRES_USER=unleash_user -e POSTGRES_DB=unleash \
+--network unleash --name postgres postgres
 ```
 
 3. Start Unleash via docker (open another terminal):
 
 ```sh
-docker run -p 4242:4242 \ -e DATABASE_HOST=postgres -e DATABASE_NAME=unleash \ -e DATABASE_USERNAME=unleash_user -e DATABASE_PASSWORD=some_password \ -e DATABASE_SSL=false \ --network unleash unleashorg/unleash-server
+docker run -p 4242:4242 \
+-e DATABASE_HOST=postgres -e DATABASE_NAME=unleash \
+-e DATABASE_USERNAME=unleash_user -e DATABASE_PASSWORD=some_password \
+-e DATABASE_SSL=false \
+--network unleash unleashorg/unleash-server
 ```
 
 Now if we open http://localhost:4242 we should get something like this 👇  
