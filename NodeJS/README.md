@@ -11,7 +11,9 @@ Before you start make sure you have these tools installed:
 ### Step 1: Running Unleash Locally {#Step 1}
 
 1. Create a network by typing this command in your terminal:  
-   `docker network create unleash`
+```sh 
+docker network create unleash
+```
 
 2. Start a postgres database:
 
@@ -26,7 +28,7 @@ docker run -p 4242:4242 \ -e DATABASE_HOST=postgres -e DATABASE_NAME=unleash \ -
 ```
 
 Now if we open http://localhost:4242 we should get something like this 👇  
-![login page](/static/img.jpg)
+![login page](/static/login.png)
 
 You can login with the default admin user:
 
@@ -44,8 +46,10 @@ Now let's create a simple server using ExpressJS;
 3. Run `npm init -y`, this should create a file called _package.json_.
 4. Now create a file called _server.js_
 5. Back to the terminal, we need to install express so run:  
-   `npm install express`
-6. Now add the following code to the _server.js_ file:
+```sh
+npm install express
+```
+7. Now add the following code to the _server.js_ file:
 
 ```js
 const express = require("express");
@@ -68,7 +72,7 @@ node server.js
 ```
 
 now when you open http://localhost:3030 in your browser you should get something like this👇  
-![web-app](/static/express-example.jpg)
+![web-app](static/express-example.jpg)
 
 ### Step 3: Connect the SDK with our app {#step 3}
 
@@ -112,14 +116,14 @@ setInterval(() => {
     else {    console.log('Toggle disabled');  }
     }, 1000);
 ```
-**Note⚠️** : `DemoToggle` should be replaced with your feature toggle name that you created.
+**Note ⚠️** : `DemoToggle` should be replaced with your feature toggle name that you created.
 
 Let's execute, run  
 ```sh 
 node server.js 
 ```
 You should see "Toggle enabled" or "Toggle disabled" (depends on your toggle initial state) printed in the console every second, try to change the state of your feature and you should see the changes in the console👇  
-![console_output](/static/img/console_output.png)
+![console_output](console_output.png)
 
 If you get a similar result that means that your SDK is connected with our app 🎉
 
