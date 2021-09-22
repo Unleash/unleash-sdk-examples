@@ -1,6 +1,7 @@
 # NodeJS example using ExpressJS
 
-We will do a simple example for NodeJS using ExpressJS to create a simple web-app.
+In this example we will create a web-app using ExpressJS and connect it with a feature that we will create using the [NodeJS SDK](https://docs.getunleash.io/sdks/node_sdk).
+
 
 Before you start make sure you have these tools installed:  
 [**Docker**](https://www.docker.com/)  
@@ -8,7 +9,7 @@ Before you start make sure you have these tools installed:
 
 ## Steps
 
-### Step 1: Running Unleash Locally {#Step 1}
+### Step 1: Running Unleash Locally
 
 1. Create a network by typing this command in your terminal:  
 ```sh 
@@ -28,7 +29,9 @@ docker run -p 4242:4242 \ -e DATABASE_HOST=postgres -e DATABASE_NAME=unleash \ -
 ```
 
 Now if we open http://localhost:4242 we should get something like this 👇  
-![login page](/static/login.png)
+<br/>
+<img src="./static/img/login.png" title="Login page Unleash" />
+
 
 You can login with the default admin user:
 
@@ -37,7 +40,7 @@ You can login with the default admin user:
 
 Once you are in go ahead and create a feature toggle. [Don't know how ?](https://docs.getunleash.io/user_guide/create_feature_toggle)
 
-### Step 2: Create an Express application {#Step 2}
+### Step 2: Create an Express application
 
 Now let's create a simple server using ExpressJS;
 
@@ -65,18 +68,20 @@ app.listen(port, () => {
 });
 ```
 
-7. Start the server by typing this command in the terminal:
+8. Start the server by typing this command in the terminal:
 
 ```sh
 node server.js
 ```
 
 now when you open http://localhost:3030 in your browser you should get something like this👇  
-![web-app](static/express-example.jpg)
 
-### Step 3: Connect the SDK with our app {#step 3}
+<br/>
+<img src="./static/img/express-example.png" title="express-example" />
 
-Now in order to use the feature we created earlier in [step 1](#step 1) with our Express app we need to use the NodeJS Client SDK.
+### Step 3: Connect the SDK with our app
+
+Now in order to use the feature we created earlier in _step 1_ with our express app we need to use the NodeJS Client SDK.
 
 1. Install the sdk using npm:
 
@@ -123,11 +128,12 @@ Let's execute, run
 node server.js 
 ```
 You should see "Toggle enabled" or "Toggle disabled" (depends on your toggle initial state) printed in the console every second, try to change the state of your feature and you should see the changes in the console👇  
-![console_output](console_output.png)
+<br/>
+<img src="./static/img/console_output.png" title="console-output" />
 
 If you get a similar result that means that your SDK is connected with our app 🎉
 
-### Step 4: Finishing our example {# step 4} 
+### Step 4: Finishing our example
 
 Now let's back to our express app.
 
@@ -156,13 +162,16 @@ Now let's run it:
 node server.js 
 ```
 Next open http://localhost:3030 and you should see something like this👇  
-![json-response-false](/static/img/json-response-false.png)
+<br/>
+<img src="./static/img/json-response-false.png" title="json-response-false" />
+
 
 Let's go and change the feature state and refrech the page, you shoud see that the json response changed👇  
-![json-response-false](/static/img/json-response-false.png)
+<br/>
+<img src="./static/img/json-response-true.png" title="json-response-true" />
 
 
-**Note**:The change takes 5 second which is by default.
+**Note ⚠️**:The change takes 5 second which is by default.
 if you want to change that, add `refreshInterval: 500` in the initialize object. It should be like this👇:
 
 ```js
