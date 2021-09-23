@@ -194,4 +194,4 @@ const unleash = initialize({
 ```
 
 # Congratulation 🎉
-If you are reading this that means that you have succefully complete the NodeJS example 👏 .
+If you are reading this that means that you have successfully complete the NodeJS example 👏 .
