@@ -127,7 +127,8 @@ setInterval(() => {
     else {    console.log('Toggle disabled');  }
     }, 1000);
 ```
-**Note ⚠️** : `DemoToggle` should be replaced with your feature toggle name that you created.
+**Note ⚠️** : `DemoToggle` should be replaced with your feature toggle name that you created. The first time you do the `isEnabled` call, the SDK may not have had a chance to synchronize with the Unleash API yet, and that you need to listen for the ready event (or away the promise returned from the initialize method) if you want to be guaranteed that it is fully synchronized.  
+The Node SDK will on purpose not block the customers application, but the user can choose to block until the SDK has fully synchronized.
 
 Let's execute, run  
 ```sh 
@@ -177,8 +178,9 @@ Let's go and change the feature state and refrech the page, you shoud see that t
 <img src="./static/img/json-response-true.png" title="json-response-true" />
 
 
-**Note ⚠️**:The change takes 5 second which is by default.
-if you want to change that, add `refreshInterval: 500` in the initialize object. It should be like this👇:
+**Note ⚠️**: The refreshInterval is set to 15s by default.
+
+if you want to change that, add `refreshInterval: 1000` in the initialize object. It should be like this👇:
 
 ```js
 const unleash = initialize({
