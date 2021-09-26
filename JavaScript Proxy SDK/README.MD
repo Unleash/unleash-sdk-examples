@@ -1,5 +1,5 @@
 # JavaScript Proxy SDK example
-Create a feature and connect it to client app using the JavaScript Proxy SDK and at the end we play around with some strategies.
+In this tutorial we will use the Unleash JavaScript SDK to enable feature toggling in our Single Page Application.
 
 ## Let's get started
 1. Create a folder then navigate to the folder through your terminal and type:  
