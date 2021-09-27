@@ -2,9 +2,7 @@
 In this tutorial we will use the Unleash JavaScript SDK to enable feature toggling in our Single Page Application.
 
 ## Let's get started
-1. Create a folder then navigate to the folder through your terminal and type:  
-`npm init -y`  
-This should create a file called _package.json_.
+1. Create a folder
 
 2. Create two files:
 
@@ -31,19 +29,10 @@ If you open your _index.html_ you should see something like this 👇
 <br/>
 <img src="./static/img/hello-unleash.png" title="index page" />
 
-Now let's install the JavaScript Proxy SDK, run:
-
-```sh
-npm install unleash-proxy-client
-```
-
 Let's import the JavaScript Proxy SDK to our html file:
 
 ```html
-<script
-  src="../node_modules/unleash-proxy-client/build/main.min.js"
-  type="text/javascript"
-></script>
+ <script src="https://unpkg.com/unleash-proxy-client@1.5.0/build/main.min.js"/>
 ```
 
 Now let initialize the SDK
