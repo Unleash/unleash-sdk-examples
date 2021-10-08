@@ -1,2 +1,4 @@
 /NodeJS/node_modules
 .DS_Store
+/PHP/vendor
+/.idea

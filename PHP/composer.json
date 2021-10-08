@@ -1,0 +1,8 @@
+{
+    "require": {
+        "unleash/client": "^1.2",
+        "guzzlehttp/guzzle": "^7.3",
+        "cache/filesystem-adapter": "^1.1",
+        "ext-json": "*"
+    }
+}
