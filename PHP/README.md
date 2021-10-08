@@ -65,7 +65,7 @@ php -S 0.0.0.0:8000
 now when you open http://localhost:8000 in your browser you should get something like this👇  
 
 <br/>
-<img src="./static/img/php-app.png" title="express-example" />
+<img src="./static/img/php-app.png" title="php-example" />
 
 ### Step 3: Connect the SDK with our app
 
