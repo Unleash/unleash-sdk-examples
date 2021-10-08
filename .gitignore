@@ -1,4 +1,5 @@
 /NodeJS/node_modules
 .DS_Store
 /PHP/vendor
+/PHP/composer.lock
 /.idea
