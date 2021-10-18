@@ -4,7 +4,8 @@ In this example we will create a web-app using PHP and connect it with a feature
 
 Before you start make sure you have these tools installed:  
 [**Docker**](https://www.docker.com/)  
-[**PHP**](https://www.php.net/) (version 7.3 or later)
+[**PHP**](https://www.php.net/) (version 7.3 or later)  
+[**Composer**](https://getcomposer.org/download/)
 
 ## Steps
 
@@ -138,7 +139,7 @@ echo json_encode([
 ]);
 ```
 
-Now let's go back to http://localhost:3030 and you should see something like this👇
+Now let's go back to http://localhost:8000 and you should see something like this👇
 
 <img src="./static/img/json-response-false.png" title="json-response-false" />
 
