@@ -2,7 +2,7 @@
 
 ### Connecting a local version of @unleash/proxy-client-react
 
-The first step is to find the folder where your local version of unleash proxy client is located and run:
+The first step is to find the folder where your local version of unleash proxy client is located and run. If you don't have it locally you can [find it here](https://github.com/Unleash/proxy-client-react):
 
 ```yarn link```
 
