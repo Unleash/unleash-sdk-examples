@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    murmurhash3 (0.1.7)
+    unleash (5.0.0)
+      murmurhash3 (~> 0.1.7)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  unleash (~> 5.0.0)
+
+BUNDLED WITH
+   2.3.15
