@@ -80,7 +80,7 @@ app.listen(port, () => {
 node server.js
 ```
 
-now when you open http://localhost:3030 in your browser you should get something like this👇  
+Now when you open http://localhost:3030 in your browser you should get something like this👇  
 
 <br/>
 <img src="./static/img/express-example.png" title="express-example" />
@@ -113,7 +113,7 @@ We need to replace the `API TOKEN` with a real one. So let's go and create a _Cl
 
 Now let's check if the SDK is connected.
 
-first import isEnabled from unleash-client:
+First import `isEnabled` from `unleash-client`:
 ```js
 const { initialize, isEnabled } = require("unleash-client");
 ```
@@ -142,9 +142,9 @@ If you get a similar result that means that your SDK is connected with our app �
 
 ### Step 4: Finishing our example
 
-Now let's back to our express app.
+Now let's back to our Express app.
 
-We want to send a JSON reponse containing the feature name and the feature status depending on the feature status (enabled or not).
+We want to send a JSON response containing the feature name and the feature status depending on the feature status (enabled or not).
 
 Replace `app.get` with this code👇
 
@@ -173,14 +173,14 @@ Next open http://localhost:3030 and you should see something like this👇
 <img src="./static/img/json-response-false.png" title="json-response-false" />
 
 
-Let's go and change the feature state and refrech the page, you shoud see that the json response changed👇  
+Let's go and change the feature state and refrech the page, you shoud see that the JSON response changed👇  
 <br/>
 <img src="./static/img/json-response-true.png" title="json-response-true" />
 
 
 **Note ⚠️**: The refreshInterval is set to 15s by default.
 
-if you want to change that, add `refreshInterval: 1000` in the initialize object. It should be like this👇:
+If you want to change that, add `refreshInterval: 1000` in the initialize object. It should look like this👇:
 
 ```js
 const unleash = initialize({
@@ -195,5 +195,5 @@ const unleash = initialize({
 });
 ```
 
-# Congratulation 🎉
-If you are reading this that means that you have successfully complete the NodeJS example 👏 .
+# Congratulations 🎉
+If you are reading this that means that you have successfully completed the NodeJS example 👏 .
