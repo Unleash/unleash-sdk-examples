@@ -3,3 +3,9 @@
 /PHP/vendor
 /PHP/composer.lock
 /.idea
+# Devenv
+.devenv*
+devenv.local.nix
+.direnv/*
+
+.log
