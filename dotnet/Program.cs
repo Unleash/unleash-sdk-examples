@@ -4,7 +4,7 @@ using Unleash.ClientFactory;
 // See https://aka.ms/new-console-template for more information
 var settings = new UnleashSettings()
 {
-    AppName = "dotnet-test",
+    AppName = "unleash-sdk-example-dotnet",
     UnleashApi = new Uri("<your-api-url>"),
     CustomHttpHeaders = new Dictionary<string, string>()
     {

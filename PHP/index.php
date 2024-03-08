@@ -6,7 +6,7 @@ use Unleash\Client\UnleashBuilder;
 
 $unleash = UnleashBuilder::create()
     ->withAppUrl('http://localhost:4242/api')
-    ->withAppName('my-php-name')
+    ->withAppName('unleash-sdk-example-php')
     ->withInstanceId('my-unique-instance-id')
     ->withCacheTimeToLive(1)
     ->withHeader('Authorization', '18ebab53095ef7f058f22eba7ad8ee0ed1375142bd2e5bdccd99ec3482554253')
