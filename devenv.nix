@@ -8,5 +8,8 @@
   languages.php.enable = true;
   languages.ruby.enable = true;
 
+  # extra packages
+  packages = [ pkgs.gradle ];
+
   # See full reference at https://devenv.sh/reference/options/
 }
