@@ -1,0 +1,7 @@
+{
+  "title": "Unleash Rust SDK",
+  "description": "This is the perfect place to get started with Rust! TODO: update for Unleash",
+  "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/rust/.codesandbox/icon.png",
+  "tags": ["rust", "cargo", "playground"],
+  "published": true
+}
