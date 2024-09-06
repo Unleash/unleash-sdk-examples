@@ -4,8 +4,8 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "run": {
-      "name": "run",
+    "cp -n .env.example .env && cargo watch -x run": {
+      "name": "cp -n .env.example .env && cargo watch -x run",
       "command": "cp -n .env.example .env && cargo watch -x run",
       "runAtStart": true
     }
