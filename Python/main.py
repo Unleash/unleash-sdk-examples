@@ -1,5 +1,5 @@
-from UnleashClient import UnleashClient
 import os
+from UnleashClient import UnleashClient
 
 api_url = os.environ.get('UNLEASH_API_URL')
 api_token = os.environ.get('UNLEASH_API_TOKEN')
@@ -13,6 +13,6 @@ client = UnleashClient(
 client.initialize_client()
 
 if client.is_enabled(flag):
-    print("Feature flag '{}' is enabled".format(flag))
+    print(f'Feature flag "{flag}" is enabled')
 else:
-    print("Feature flag '{}' is disabled".format(flag))
+    print(f'Feature flag "{flag}" is disabled')
