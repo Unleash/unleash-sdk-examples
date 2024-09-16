@@ -1,8 +1,16 @@
 {
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
-    "cp -n .env.example .env",
-    "go get"
+    {
+      "name": "Copy .env.example",
+      "command": "cp -n .env.example .env"
+    },
+    {
+      "name": "Install Dependencies",
+      "command": "go get"
+    }
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
