@@ -1,8 +1,11 @@
 import os
+from dotenv import load_dotenv
 from UnleashClient import UnleashClient
 
-api_url = os.environ.get('UNLEASH_API_URL')
-api_token = os.environ.get('UNLEASH_API_TOKEN')
+load_dotenv()
+
+api_url = os.getenv('UNLEASH_API_URL')
+api_token = os.getenv('UNLEASH_API_TOKEN')
 flag = "demoApp.step1"
 
 client = UnleashClient(
