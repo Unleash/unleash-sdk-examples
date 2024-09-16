@@ -1,5 +1,7 @@
 # Unleash Rust SDK
 
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Tymek/unleash-sdk-examples/tree/master/Rust)
+
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-rust) for [Rust](https://www.rust-lang.org/) and experiment.
 
 ```sh
