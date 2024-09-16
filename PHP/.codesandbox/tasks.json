@@ -6,6 +6,10 @@
     {
       "name": "Copy .env.example",
       "command": "cp -n .env.example .env"
+    },
+    {
+      "name": "Install dependencies",
+      "command": "composer install"
     }
   ],
 
