@@ -18,8 +18,7 @@
       "restartOn": {
         "files": ["requirements.txt"]
       }
-    }
-
+    },
     "cp -n .env.example .env": {
       "name": "cp -n .env.example .env",
       "command": "cp -n .env.example .env",
