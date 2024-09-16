@@ -6,7 +6,7 @@ load_dotenv()
 
 api_url = os.getenv('UNLEASH_API_URL')
 api_token = os.getenv('UNLEASH_API_TOKEN')
-flag = "demoApp.step1"
+flag = "flag-rust"
 
 client = UnleashClient(
     url=api_url,
