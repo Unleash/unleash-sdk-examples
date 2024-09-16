@@ -1,12 +1,28 @@
-<html>
+<?php
 
-<head>
-    <title>PHP Starter</title>
-</head>
+require_once __DIR__ . '/vendor/autoload.php';
 
-<body>
-    <h1>PHP Starter in CodeSandbox</h1>
-    <?php phpinfo(); ?>
-</body>
+use Unleash\Client\UnleashBuilder;
 
-</html>
+Dotenv\Dotenv::createUnsafeImmutable(__DIR__)->load();
+
+$unleash = UnleashBuilder::create()
+    ->withAppUrl($_ENV['UNLEASH_API_URL'])
+    ->withAppName('codesandbox-php')
+    ->withHeader('Authorization', $_ENV['UNLEASH_API_TOKEN'])
+    ->withMetricsInterval(3000)
+    ->build();
+
+header("Content-Type: text/plain; charset=utf8");
+while(true) {
+    if ($unleash->isEnabled("DemoToggle")) {
+        echo "Toggle enabled";
+    } else {
+        echo "Toggle disabled";
+    }
+    echo PHP_EOL;
+    ob_flush();
+    flush();
+    sleep(1);
+}
+
