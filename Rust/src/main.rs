@@ -10,7 +10,7 @@ use unleash_api_client::Client;
 
 #[derive(Debug, Deserialize, Serialize, Enum, Clone)]
 enum Flags {
-    #[serde(rename = "flag-rust")] // TODO: Flag name
+    #[serde(rename = "example-flag")] // TODO: Flag name
     TestFlag,
 }
 

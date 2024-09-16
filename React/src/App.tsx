@@ -2,7 +2,7 @@ import { useFlag, useVariant } from "@unleash/proxy-client-react";
 import "./styles.css";
 
 export default function App() {
-  const isEnabled = useFlag("flag-react");
+  const isEnabled = useFlag("example-flag");
 
   return (
     <div className="App">

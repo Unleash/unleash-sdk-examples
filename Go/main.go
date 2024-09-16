@@ -11,7 +11,7 @@ import (
 	"github.com/joho/godotenv"
 )
 
-const FlagName = "flag-go"
+const FlagName = "example-flag"
 
 func main() {
 	err := godotenv.Load(".env")
