@@ -1,7 +1,7 @@
 {
-  "title": "Go",
-  "description": "Get started with Go in CodeSandbox!",
+  "title": "Unleash Go SDK",
+  "description": "Get started with Unealsh Go SDK in CodeSandbox!",
   "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/go/.codesandbox/icon.png",
-  "tags": ["go", "golang", "playground"],
+  "tags": ["unleash", "go", "golang", "playground"],
   "published": true
 }
