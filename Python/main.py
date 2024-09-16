@@ -12,7 +12,7 @@ flag = "flag-rust"
 
 client = UnleashClient(
     url=api_url,
-    app_name="unleash-python-example",
+    app_name="codesandbox-python",
     custom_headers={'Authorization': api_token},
     metrics_interval=1)
 
