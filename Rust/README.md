@@ -7,9 +7,4 @@ cp -n .env.example .env
 cargo watch -x run
 ```
 
-Check out [src/main.rs](./src/main.rs) for the code.
-When you save, it will automatically recompile and show a new version thanks to [`cargo-watch`](https://crates.io/crates/cargo-watch).
-You can set you instance URL and API client token in `.env`.
-Set your flag name in line `:13`.
-
-To add a new dependency, open a new terminal (```CMD/Ctrl + ` ```) and run `cargo add ...`.
+Check out [src/main.rs](./src/main.rs) for the code. Set your flag name in line `:13`. Put you instance URL and API client token in `.env`. When you save, `cargo` will automatically recompile and show a new version thanks to [`cargo-watch`](https://crates.io/crates/cargo-watch).
