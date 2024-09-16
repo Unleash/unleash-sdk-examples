@@ -13,6 +13,6 @@ python main.py
 
 Check out [main.py](./main.py) for the code.
 You can set you instance URL and API client token in `.env`.
-Set your flag name on line `:18`.
+Set your flag name on line `:16`.
 
 To add a new dependency, edit `requirements.txt` and run `pip install -r requirements.txt`.

@@ -5,10 +5,8 @@ from dotenv import load_dotenv
 from UnleashClient import UnleashClient
 
 
-async def wait_to_send_metrics():
-    print("Waiting to ensure metrics are sent")
+async def wait():
     await asyncio.sleep(2)
-    print("Done waiting!")
 
 
 load_dotenv()
@@ -30,4 +28,6 @@ if client.is_enabled(flag):
 else:
     print(f'Feature flag "{flag}" is disabled')
 
-asyncio.run(wait_to_send_metrics())
+print("Waiting to ensure metrics are sent")
+asyncio.run(wait())
+print("Done waiting!")
