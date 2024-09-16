@@ -1,7 +1,7 @@
-# Go Starter
+# Unleash Go SDK
 
 [![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Tymek/unleash-sdk-examples/tree/master/Go)
 
-Here you can easily get started with [Go](https://go.dev/) and experiment. Make sure to Fork this template by clicking the button in the top right corner!
+Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-go) and experiment.
 
-Check [the Dockerfile](./.devcontainer/Dockerfile) to see how we configure the container of this sandbox. You can simply edit it yourself and the container will rebuild. Make sure to fork the sandbox first by clicking "Fork" in the top left corner.
+Check out [main.go](./main.go) for the code. Set your flag name in line `:14`. Put you instance URL and API client token in `.env`.
