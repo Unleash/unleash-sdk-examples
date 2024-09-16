@@ -10,6 +10,7 @@ $unleash = UnleashBuilder::create()
     ->withAppUrl($_ENV['UNLEASH_API_URL'])
     ->withAppName('codesandbox-php')
     ->withHeader('Authorization', $_ENV['UNLEASH_API_TOKEN'])
+    ->withInstanceId(hash_file('sha256', __FILE__))
     ->withMetricsInterval(3000)
     ->build();
 
