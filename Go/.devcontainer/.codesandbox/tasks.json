@@ -1,12 +1,15 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": [],
+  "setupTasks": [
+    "cp -n .env.example .env",
+    "go get"
+  ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "go run": {
       "name": "Run",
-      "command": "cp -n .env.example .env && go get && go run main.go",
+      "command": "go run main.go",
       "runAtStart": true,
       "restartOn": {
         "files": ["./main.go"]
