@@ -16,7 +16,7 @@ $unleash = UnleashBuilder::create()
 
 header("Content-Type: text/plain; charset=utf8");
 while(true) {
-    if ($unleash->isEnabled("DemoToggle")) {
+    if ($unleash->isEnabled("example-flag")) {
         echo "Toggle enabled";
     } else {
         echo "Toggle disabled";
