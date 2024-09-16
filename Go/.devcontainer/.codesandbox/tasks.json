@@ -6,7 +6,7 @@
   "tasks": {
     "go run": {
       "name": "Run",
-      "command": "go run main.go",
+      "command": "cp -n .env.example .env && go get && go run main.go",
       "runAtStart": true,
       "restartOn": {
         "files": ["./main.go"]
