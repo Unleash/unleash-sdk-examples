@@ -4,7 +4,7 @@
     {
       "name": "Install Dependencies",
       "command": "yarn install"
-    }
+    },
     {
       "name": "Copy .env file",
       "command": "cp .env.example .env"
