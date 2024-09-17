@@ -25,7 +25,8 @@ $startTime = time();
 header("Content-Type: text/plain; charset=utf8");
 echo str_pad(' ',4096, "\u{200B}")."\n"; // Fill browser buffer to force flush
 
-while (true) {
+$i = 0;
+while ($i++ < 30) {
     if ($unleash->isEnabled("example-flag")) {
         echo "example-flag: enabled \n";
     } else {
