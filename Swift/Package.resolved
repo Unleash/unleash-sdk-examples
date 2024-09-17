@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "swifteventbus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cesarferreira/SwiftEventBus.git",
+      "state" : {
+        "revision" : "a30ff35e616f507d8a8d122dac32a2150371a87e",
+        "version" : "5.1.0"
+      }
+    },
+    {
+      "identity" : "unleash-proxy-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Unleash/unleash-proxy-client-swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4578bb9cca31fc60ba45a07b6f608b9ed666512c"
+      }
+    }
+  ],
+  "version" : 2
+}
