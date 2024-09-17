@@ -1,0 +1,1 @@
+{"version":3,"file":"storage-provider-inmemory.d.ts","sourceRoot":"../src/","sources":["storage-provider-inmemory.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,gBAAgB,MAAM,oBAAoB,CAAC;AAEvD,MAAM,CAAC,OAAO,OAAO,uBAAwB,YAAW,gBAAgB;IACpE,OAAO,CAAC,KAAK,CAAa;IAEb,IAAI,CAAC,IAAI,EAAE,MAAM,EAAE,IAAI,EAAE,GAAG;IAI5B,GAAG,CAAC,IAAI,EAAE,MAAM;CAGhC"}

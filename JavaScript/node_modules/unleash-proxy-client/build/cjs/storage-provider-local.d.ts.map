@@ -1,0 +1,1 @@
+{"version":3,"file":"storage-provider-local.d.ts","sourceRoot":"../src/","sources":["storage-provider-local.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,gBAAgB,MAAM,oBAAoB,CAAC;AAEvD,MAAM,CAAC,OAAO,OAAO,oBAAqB,YAAW,gBAAgB;IACjE,OAAO,CAAC,MAAM,CAAS;gBAEX,IAAI,SAAuB;IAI1B,IAAI,CAAC,IAAI,EAAE,MAAM,EAAE,IAAI,EAAE,GAAG;IAUlC,GAAG,CAAC,IAAI,EAAE,MAAM;CAS1B"}
