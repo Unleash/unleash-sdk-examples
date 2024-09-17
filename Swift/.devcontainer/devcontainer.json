@@ -4,9 +4,8 @@
   "name": "Swift",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "ghcr.io/swift-server/swift-devcontainer-template/swift:2.3.0",
-  "customizations": {
-    "vscode": {
-      "extensions": ["DEVSENSE.phptools-vscode"]
-    }
-  }
+  "settings": {},
+  "extensions": [],
+  "postCreateCommand": "swift build",
+  "forwardPorts": []
 }
