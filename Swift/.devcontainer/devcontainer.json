@@ -1,6 +1,8 @@
 {
   "name": "Devcontainer",
-  "image": "ghcr.io/swift-server/swift-devcontainer-template/swift:2.3.0",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
   "customizations": {
     "vscode": {
       "extensions": []
