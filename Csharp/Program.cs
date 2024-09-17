@@ -18,7 +18,7 @@ public class Program
 
 		var settings = new UnleashSettings()
 		{
-			AppName = "dotnet-fiddle",
+			AppName = "codesandbox-csharp",
 			UnleashApi = new Uri(url),
 			CustomHttpHeaders = new Dictionary<string, string>()
 			{
