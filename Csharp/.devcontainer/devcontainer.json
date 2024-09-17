@@ -1,6 +1,6 @@
 {
-	"name": "C# (.NET)",
-	"image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm-slim",
+  "name": "C# (.NET)",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm-slim",
   "customizations": {
     "vscode": {
       "extensions": [
