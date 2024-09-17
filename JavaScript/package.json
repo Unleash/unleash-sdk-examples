@@ -1,0 +1,21 @@
+{
+  "name": "unleash-javascript-examplpe",
+  "version": "1.0.0",
+  "description": "Unleash JS SDK example",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0"
+  },
+  "keywords": [
+    "css",
+    "javascript"
+  ],
+  "dependencies": {
+    "unleash-proxy-client": "3.6.1"
+  }
+}
