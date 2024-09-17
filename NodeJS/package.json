@@ -10,6 +10,7 @@
   "author": "Ives van Hoorne",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "unleash-client": "^6.1.1"
   }
 }

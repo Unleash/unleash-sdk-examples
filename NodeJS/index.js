@@ -1,4 +1,9 @@
 const { initialize, isEnabled, getVariant } = require('unleash-client');
+require('dotenv').config()
+
+console.log(`Unleash API URL is ${process.env.UNLEASH_API_URL}`);
+console.log(`Unleash API token is ${process.env.UNLEASH_API_TOKEN}`);
+
 
 // Initialize the Unleash client
 const instance = initialize({
