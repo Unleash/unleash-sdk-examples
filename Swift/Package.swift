@@ -9,7 +9,7 @@ let package = Package(
             .iOS("12.0")
     ],
     dependencies: [
-        .package(url: "https://github.com/Unleash/unleash-proxy-client-swift.git", branch: "main")
+        .package(url: "https://github.com/Unleash/unleash-proxy-client-swift.git", .branch("main"))
     ],
     targets: [
         .target(
