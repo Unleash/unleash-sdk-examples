@@ -16,6 +16,9 @@ let package = Package(
             name: "UnleashExample",
             dependencies: [
                 .product(name: "UnleashProxyClientSwift", package: "unleash-proxy-client-swift")
+            ],
+            swiftSettings: [
+                .define("USE_FOUNDATION")
             ]
         )
     ]
