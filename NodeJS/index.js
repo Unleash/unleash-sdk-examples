@@ -4,16 +4,18 @@ require('dotenv').config()
 console.log(`Unleash API URL is ${process.env.UNLEASH_API_URL}`);
 console.log(`Unleash API token is ${process.env.UNLEASH_API_TOKEN}`);
 
+const apiUrl = process.env.UNLEASH_API_URL
+const apiToken = process.env.UNLEASH_API_TOKEN
+const flag = 'example-flag'
+
 
 // Initialize the Unleash client
 const instance = initialize({
-  url: 'https://sandbox.getunleash.io/enterprise/api/',
-  appName: 'unleash-sdk-example-node',
-  instanceId: 'your-instance-1',
-  refreshInterval: 1,
-  metricsInterval: 1000,
+  url: apiUrl,
+  appName: 'codesandbox-node',
+  metricsInterval: 1,
   customHeaders: {
-    Authorization: 'dependency-metrics-testing:development.b50d112c6e43f496c695fe8c9de2934d42ad5368faf574368adc4b18',
+    Authorization: apiToken,
   },
 });
 
