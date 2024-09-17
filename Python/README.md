@@ -1,6 +1,6 @@
 # Python Starter
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Tymek/unleash-sdk-examples/tree/master/Python)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/Python)
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-rust) for [Rust](https://www.python.org/) and experiment.
 
