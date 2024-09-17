@@ -3,9 +3,5 @@
 {
   "name": "Swift",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "swift:4",
-  "settings": {},
-  "extensions": [],
-  "postCreateCommand": "swift build",
-  "forwardPorts": []
+  "image": "swiftarm/swift"
 }
