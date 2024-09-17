@@ -5,13 +5,5 @@
   "setupTasks": [],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
-  "tasks": {
-    "swift run": {
-      "name": "Run",
-      "command": "swift run",
-      "runAtStart": true,
-      "restartOn": {
-        "files": ["./Sources/UnleashExample/main.swift"]
-      }
-  }
+  "tasks": {}
 }
