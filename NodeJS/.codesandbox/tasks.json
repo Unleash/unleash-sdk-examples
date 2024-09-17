@@ -5,6 +5,10 @@
       "name": "Install Dependencies",
       "command": "yarn install"
     }
+    {
+      "name": "Copy .env file",
+      "command": "cp .env.example .env"
+    }
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
