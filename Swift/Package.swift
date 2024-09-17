@@ -1,18 +1,18 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.6
 
 import PackageDescription
 
 let package = Package(
     name: "UnleashExample",
     platforms: [
-            .macOS("10.15"),
-            .iOS("12.0")
+            .macOS(.v10_15),
+            .iOS(.v12),
     ],
     dependencies: [
-        .package(url: "https://github.com/Unleash/unleash-proxy-client-swift.git", .branch("main"))
+        .package(url: "https://github.com/Unleash/unleash-proxy-client-swift.git", branch: "main")
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "UnleashExample",
             dependencies: [
                 .product(name: "UnleashProxyClientSwift", package: "unleash-proxy-client-swift")
