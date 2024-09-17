@@ -1,0 +1,19 @@
+{
+  "setupTasks": [
+    "dotnet restore",
+    "cp -n .env.example .env"
+  ],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "dotnet run",
+      "runAtStart": true,
+      "restartOn": {
+        "files": [
+          "Program.cs",
+          ".env"
+        ]
+      }
+    }
+  }
+}
