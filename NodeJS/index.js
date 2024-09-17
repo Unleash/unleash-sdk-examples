@@ -22,13 +22,12 @@ instance.on('ready', () => {
     console.log(`Flag '${flag}' is disabled`);
   }
 
-  // Sending metrics (imitating the Java sleep)
   setTimeout(() => {
-    console.log('Metrics sent (simulated)');
-  }, 5000);
+    console.log('Waited for metrics to be sent');
+  }, 2000);
 });
 
-// Handle the initialization error
+// Handle initialization errors
 instance.on('error', (error) => {
   console.error('Failed to initialize Unleash:', error);
 });
