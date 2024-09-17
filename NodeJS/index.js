@@ -1,4 +1,4 @@
-const { initialize, isEnabled, getVariant } = require('unleash-client');
+const { initialize } = require('unleash-client');
 require('dotenv').config()
 
 const apiUrl = process.env.UNLEASH_API_URL
@@ -17,10 +17,10 @@ const instance = initialize({
 
 instance.on('ready', () => {
   if (unleash.isEnabled(flag)) {
-      console.log(`Flag '${flag}' is enabled`);
-    } else {
-      console.log(`Flag '${flag}' is disabled`);
-    }
+    console.log(`Flag '${flag}' is enabled`);
+  } else {
+    console.log(`Flag '${flag}' is disabled`);
+  }
 
   // Sending metrics (imitating the Java sleep)
   setTimeout(() => {
