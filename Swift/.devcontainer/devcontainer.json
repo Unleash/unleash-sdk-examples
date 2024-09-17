@@ -3,7 +3,7 @@
 {
   "name": "Swift",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "ghcr.io/swift-server/swift-devcontainer-template/swift:2.3.0",
+  "image": "swift:5.10-bookworm",
   "settings": {},
   "extensions": [],
   "postCreateCommand": "swift build",
