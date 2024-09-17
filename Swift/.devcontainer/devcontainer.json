@@ -3,7 +3,7 @@
 {
   "name": "Swift",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "swift:5.10-bookworm",
+  "image": "swift:4",
   "settings": {},
   "extensions": [],
   "postCreateCommand": "swift build",
