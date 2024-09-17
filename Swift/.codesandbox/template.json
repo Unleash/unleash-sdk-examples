@@ -1,7 +1,7 @@
 {
-  "title": "Unleash PHP SDK",
-  "description": "Quickly get started with Unleash PHP SDK",
+  "title": "Unleash Swift SDK",
+  "description": "Quickly get started with Unleash Swift SDK",
   "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/php/.codesandbox/icon.png",
-  "tags": ["unleash", "php", "backend"],
+  "tags": ["unleash", "swift"],
   "published": true
 }
