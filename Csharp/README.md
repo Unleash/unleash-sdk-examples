@@ -1,6 +1,6 @@
 # Unleash C# Starter
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Tymek/unleash-sdk-examples/tree/master/Csharp)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/Csharp)
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-rust) for [.NET](https://dotnet.microsoft.com) and experiment.
 
