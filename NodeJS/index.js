@@ -13,7 +13,7 @@ const flag = 'example-flag'
 const instance = initialize({
   url: apiUrl,
   appName: 'codesandbox-node',
-  metricsInterval: 1,
+  metricsInterval: 1000,
   customHeaders: {
     Authorization: apiToken,
   },
