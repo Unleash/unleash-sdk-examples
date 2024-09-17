@@ -17,7 +17,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "php -S localhost:8080",
+      "command": "php -S 0.0.0.0:8080",
       "runAtStart": true,
       "preview": {
         "port": 8080
