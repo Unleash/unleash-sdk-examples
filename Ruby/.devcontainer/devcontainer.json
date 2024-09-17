@@ -1,0 +1,9 @@
+{
+  "name": "Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.3-bookworm",
+  "customizations": {
+    "vscode": {
+      "extensions": ["shopify.ruby-lsp"]
+    }
+  }
+}
