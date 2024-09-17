@@ -1,6 +1,6 @@
 {
   "name": "Swift",
-  "image": "swift:${templateOption:imageVariant}",
+  "image": "swift:5.10",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": "false",
