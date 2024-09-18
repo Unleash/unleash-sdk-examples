@@ -27,20 +27,11 @@ public class Program
             }
         };
 
-        var unleashFactory = new UnleashClientFactory();
+        var unleash =  new DefaultUnleash(settings);
 
-        var unleash =  await unleashFactory.CreateClientAsync(settings, synchronousInitialization: true);
-
-        if (unleash.IsEnabled(flag))
-        {
-            Console.WriteLine($"Flag '{flag}' is enabled");
+        while (true) {
+            Console.WriteLine($"'{flag}' is enabled: {unleash.IsEnabled(flag)}");
+            await Task.Delay(1000);
         }
-        else {
-            Console.WriteLine($"Flag '{flag}' is disabled");
-        }
-
-        Console.WriteLine("Waiting for metrics to be sent...");
-        await Task.Delay(2000);
-        Console.WriteLine("Done waiting. Exiting.");
     }
 }
