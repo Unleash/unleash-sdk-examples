@@ -9,7 +9,7 @@
     },
     {
       "name": "Install dependencies",
-      "command": "composer install"
+      "command": "bundle install"
     }
   ],
 
@@ -17,7 +17,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "",
+      "command": "ruby example.rb",
       "runAtStart": true
     }
   }
