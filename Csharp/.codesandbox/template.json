@@ -1,0 +1,7 @@
+{
+  "title": "Unleash C# SDK",
+  "description": "Get started quickly with Unleash in C#.",
+  "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/python/.codesandbox/icon.png",
+  "tags": ["dotnet", "unleash", "csharp", "playground"],
+  "published": true
+}
