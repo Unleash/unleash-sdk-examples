@@ -2,7 +2,7 @@
 
 [![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/Csharp)
 
-Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-rust) for [.NET](https://dotnet.microsoft.com) and experiment.
+Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-dotnet) for [.NET](https://dotnet.microsoft.com) and experiment.
 
 ```sh
 cp -n .env.example .env
