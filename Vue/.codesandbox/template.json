@@ -1,0 +1,16 @@
+{
+  "title": "Unleash Vue SDK",
+  "description": "Quickly get started with Unleash Vue SDK",
+  "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/vue-vite/.codesandbox/icon.png",
+  "tags": [
+    "unleash",
+    "featured",
+    "frontend",
+    "vue",
+    "vue3",
+    "vite",
+    "javascript",
+    "typescript"
+  ],
+  "published": true
+}
