@@ -15,5 +15,5 @@ const unleash = initialize({
 });
 
 setInterval(() => {
-  console.log('Is enabled', unleash.isEnabled(flag));
+  console.log(`'${flag}' is enabled:`, unleash.isEnabled(flag));
 }, 1000);
