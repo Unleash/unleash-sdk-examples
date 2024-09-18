@@ -1,27 +1,18 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from './components/HelloWorld.vue'
+import { FlagProvider } from '@unleash/proxy-client-vue'
+
+const config = {
+  url: 'https://app.unleash-hosted.com/demo/api/frontend',
+  clientKey: 'codesandbox:dev.b32907f5ced021c0443ad770b371c81191683c96e6ae8e003876d509',
+  refreshInterval: 5,
+  metricsInterval: 5,
+  appName: 'codesandbox-vue'
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vuejs.org/" target="_blank">
-      Vue
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <FlagProvider :config="config">
+    <HelloWorld />
+  </FlagProvider>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
