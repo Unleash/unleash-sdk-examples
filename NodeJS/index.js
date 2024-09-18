@@ -5,7 +5,6 @@ const apiUrl = process.env.UNLEASH_API_URL;
 const apiToken = process.env.UNLEASH_API_TOKEN;
 const flag = 'example-flag';
 
-// Initialize the Unleash client
 const unleash = initialize({
   url: apiUrl,
   appName: 'codesandbox-node',
@@ -15,19 +14,6 @@ const unleash = initialize({
   },
 });
 
-unleash.on('ready', () => {
-  if (unleash.isEnabled(flag)) {
-    console.log(`Flag '${flag}' is enabled`);
-  } else {
-    console.log(`Flag '${flag}' is disabled`);
-  }
-
-  setTimeout(() => {
-    console.log('Waited for metrics to be sent');
-  }, 2000);
-});
-
-// Handle initialization errors
-unleash.on('error', (error) => {
-  console.error('Failed to initialize Unleash:', error);
-});
+setInterval(() => {
+  console.log('Is enabled', unleash.isEnabled(flag));
+}, 1000);

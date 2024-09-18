@@ -13,6 +13,6 @@ yarn start
 
 Check out [index.js](./index.js) for the code.
 You can set you instance URL and API client token in `.env`.
-Set your flag name on line `:16`.
+Set your flag name on line `:6`.
 
 To add a new dependency, run `yarn add <package-name>`.
