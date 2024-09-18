@@ -2,7 +2,6 @@
 import { useFlag, useFlagsStatus, useVariant } from '@unleash/proxy-client-vue'
 
 const enabled = useFlag('example-flag')
-const variant = useVariant('example-flag')
 const { flagsReady } = useFlagsStatus()
 </script>
 
