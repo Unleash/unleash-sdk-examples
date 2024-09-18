@@ -1,9 +1,9 @@
 const { initialize } = require('unleash-client');
-require('dotenv').config()
+require('dotenv').config();
 
-const apiUrl = process.env.UNLEASH_API_URL
-const apiToken = process.env.UNLEASH_API_TOKEN
-const flag = 'example-flag'
+const apiUrl = process.env.UNLEASH_API_URL;
+const apiToken = process.env.UNLEASH_API_TOKEN;
+const flag = 'example-flag';
 
 // Initialize the Unleash client
 const unleash = initialize({
