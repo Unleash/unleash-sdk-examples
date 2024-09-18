@@ -4,11 +4,6 @@ import asyncio
 from dotenv import load_dotenv
 from UnleashClient import UnleashClient
 
-
-async def wait():
-    await asyncio.sleep(2)
-
-
 load_dotenv()
 
 api_url = os.getenv('UNLEASH_API_URL')
@@ -23,11 +18,6 @@ client = UnleashClient(
 
 client.initialize_client()
 
-if client.is_enabled(flag):
-    print(f'Feature flag "{flag}" is enabled')
-else:
-    print(f'Feature flag "{flag}" is disabled')
-
-print("Waiting to ensure metrics are sent")
-asyncio.run(wait())
-print("Done waiting!")
+while True:
+    print(f"'{flag}' is enabled: {client.is_enabled(flag)}")
+    asyncio.run(asyncio.sleep(2))
