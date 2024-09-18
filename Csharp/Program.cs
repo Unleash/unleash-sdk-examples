@@ -7,8 +7,8 @@ using dotenv.net;
 
 public class Program
 {
-	public static async Task Main()
-	{
+    public static async Task Main()
+    {
         DotEnv.Load();
         var envVars = DotEnv.Read();
 
@@ -16,14 +16,15 @@ public class Program
         var url = envVars["UNLEASH_API_URL"];
         var token = envVars["UNLEASH_API_TOKEN"];
 
-		var settings = new UnleashSettings()
-		{
-			AppName = "codesandbox-csharp",
-			UnleashApi = new Uri(url),
-			CustomHttpHeaders = new Dictionary<string, string>()
-			{
+        var settings = new UnleashSettings()
+        {
+            AppName = "codesandbox-csharp",
+            UnleashApi = new Uri(url),
+            SendMetricsInterval = TimeSpan.FromSeconds(1),
+            CustomHttpHeaders = new Dictionary<string, string>()
+            {
                 {"Authorization",token}
-			}
+            }
         };
 
         var unleashFactory = new UnleashClientFactory();
@@ -34,8 +35,12 @@ public class Program
         {
             Console.WriteLine($"Flag '{flag}' is enabled");
         }
-		else {
+        else {
             Console.WriteLine($"Flag '{flag}' is disabled");
-		}
-	}
+        }
+
+        Console.WriteLine("Waiting for metrics to be sent...");
+        await Task.Delay(2000);
+        Console.WriteLine("Done waiting. Exiting.");
+    }
 }
