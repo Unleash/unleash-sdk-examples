@@ -6,9 +6,11 @@ const { flagsReady } = useFlagsStatus()
 </script>
 
 <template>
-  <div v-if="!flagsReady">Loading...</div>
-  <div v-else>
-    {{ enabled ? 'Feature is enabled!' : 'Feature is disabled!' }}
+  <div>
+    <div v-if="!flagsReady">Loading...</div>
+    <div v-else>
+      {{ enabled ? 'Feature is enabled!' : 'Feature is disabled!' }}
+    </div>
+    <sub>See <code>README.md</code> for more information.</sub>
   </div>
-  <sub>See <code>README.md</code> for more information.</sub>
 </template>
