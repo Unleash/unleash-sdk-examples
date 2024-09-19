@@ -1,8 +1,9 @@
 {
-  "title": "SvelteKit",
-  "description": "The official Svelte Cloud Sandbox Template by the CodeSandbox team",
+  "title": "Unleash Svelte SDK",
+  "description": "Example SvelteKit app with Unleash Svelte SDK",
   "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/sveltekit/.codesandbox/icon.png",
   "tags": [
+    "unleash",
     "frontend", 
     "starter",
     "svelekit",
