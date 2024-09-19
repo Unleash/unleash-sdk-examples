@@ -4,21 +4,19 @@
 
 	const config = {
 		url: 'https://app.unleash-hosted.com/demo/api/frontend',
-		clientKey:
-			'proxy-client-svelte:development.f7d5c2f3633769afea4eadecd6bf46194dccec9c75170930c76ab4f0',
-		refreshInterval: 2,
-		appName: 'proxy-client-svelte'
+		clientKey: 'codesandbox:dev.b32907f5ced021c0443ad770b371c81191683c96e6ae8e003876d509',
+		refreshInterval: 5,
+		metricsInterval: 5,
+		appName: 'codesandbox-svelte'
 	};
 </script>
 
 <div class="app">
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<FlagProvider {config}>
+		<main>
+			<slot />
+		</main>
+	</FlagProvider>
 </div>
 
 <style>
@@ -37,23 +35,5 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
 	}
 </style>
