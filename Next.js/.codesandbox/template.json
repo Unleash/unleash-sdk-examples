@@ -1,0 +1,15 @@
+{
+  "title": "Unleash Next.js SDK",
+  "description": "Easy way of setting up Unleash with Next.js",
+  "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/nextjs/.codesandbox/icon.png",
+  "tags": [
+    "unleash",
+    "featured",
+    "frontend",
+    "nextjs",
+    "react",
+    "javascript",
+    "typescript"
+  ],
+  "published": true
+}
