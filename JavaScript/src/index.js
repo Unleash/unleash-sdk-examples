@@ -3,7 +3,7 @@ import { UnleashClient } from "unleash-proxy-client";
 const unleash = new UnleashClient({
     url: "https://app.unleash-hosted.com/demo/api/frontend",
     clientKey:
-        "codesandbox:dev.b32907f5ced021c0443ad770b371c81191683c96e6ae8e003876d509",
+        "demo-app:dev.95ae66ab673bf467facb68b2487904f4891064d26b47e89ca498063d",
     appName: "javascript-codesandbox",
 });
 

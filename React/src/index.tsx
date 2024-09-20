@@ -12,7 +12,7 @@ root.render(
       config={{
         url: "https://app.unleash-hosted.com/demo/api/frontend", // Your front-end API URL or the Unleash proxy's URL (https://<proxy-url>/proxy)
         clientKey:
-          "codesandbox:dev.b32907f5ced021c0443ad770b371c81191683c96e6ae8e003876d509", // A client-side API token OR one of your proxy's designated client keys
+          "demo-app:dev.95ae66ab673bf467facb68b2487904f4891064d26b47e89ca498063d", // A client-side API token OR one of your proxy's designated client keys
         refreshInterval: 15, // How often (in seconds) the client should poll the proxy for updates
         appName: "codesandbox-react", // The name of your application. It's only used for identifying your application
       }}
