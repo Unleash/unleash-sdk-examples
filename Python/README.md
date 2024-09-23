@@ -1,6 +1,6 @@
 # Python Starter
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/Python)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/main/Python)
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-python) for [Python](https://www.python.org/) and experiment.
 

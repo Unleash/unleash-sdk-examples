@@ -1,6 +1,6 @@
 # Unleash Vue SDK
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/Vue)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/main/Vue)
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/proxy-client-vue) for [Vue](https://vuejs.org/) and experiment.
 
