@@ -6,7 +6,7 @@
       "command": "java -jar target/unleash-java-example-1.0-SNAPSHOT.jar",
       "runAtStart": true,
       "restartOn": {
-        "files": ["src/Main.java", ".env"]
+        "files": ["src/main/java/Main.java", ".env"]
       }
     }
   }
