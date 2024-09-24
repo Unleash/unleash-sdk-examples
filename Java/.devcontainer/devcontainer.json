@@ -1,12 +1,6 @@
 {
   "name": "Java (OpenJDK 17)",
-  "image": "mcr.microsoft.com/devcontainers/java:0-17",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "vscjava.vscode-java-pack",
-        "vscjava.vscode-maven",
-      ]
-    }
+  "build": {
+    "dockerfile": "Dockerfile"
   }
 }
