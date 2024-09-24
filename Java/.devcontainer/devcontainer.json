@@ -2,5 +2,9 @@
   "name": "Java (OpenJDK 17)",
   "build": {
     "dockerfile": "Dockerfile"
+  },
+  "env": {
+    "UNLEASH_API_URL": "https://app.unleash-hosted.com/demo/api",
+    "UNLEASH_API_TOKEN": "demo-app:dev.9fc74dd72d2b88bea5253c04240b21a54841f08d9918046ed55a06b5"
   }
 }

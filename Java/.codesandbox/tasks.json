@@ -1,5 +1,5 @@
 {
-  "setupTasks": [ "mvn install", "cp -n .env.example .env"],
+  "setupTasks": [ "mvn install"],
   "tasks": {
     "start": {
       "name": "start",
