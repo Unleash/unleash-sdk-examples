@@ -3,7 +3,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "java src/Main",
+      "command": "java src/Main.java",
       "runAtStart": true,
       "restartOn": {
         "files": ["src/Main.java", ".env"]
