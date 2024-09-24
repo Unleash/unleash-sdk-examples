@@ -1,0 +1,13 @@
+{
+  "setupTasks": ["javac src/Main.java", "cp -n .env.example .env"],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "java src/Main",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["src/Main.java", ".env"]
+      }
+    }
+  }
+}
