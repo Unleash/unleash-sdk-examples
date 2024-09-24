@@ -1,9 +1,9 @@
 {
-  "setupTasks": ["javac src/Main.java", "cp -n .env.example .env"],
+  "setupTasks": ["mvn clean install", "cp -n .env.example .env"],
   "tasks": {
     "start": {
       "name": "start",
-      "command": "java src/Main",
+      "command": "mvn exec:java -Dexec.mainClass=\"src.Main\"",
       "runAtStart": true,
       "restartOn": {
         "files": ["src/Main.java", ".env"]
