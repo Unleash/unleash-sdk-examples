@@ -1,5 +1,5 @@
 {
-  "setupTasks": ["mvn clean install", "cp -n .env.example .env"],
+  "setupTasks": ["javac src/Main.java", "cp -n .env.example .env"],
   "tasks": {
     "start": {
       "name": "start",
