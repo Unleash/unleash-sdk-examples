@@ -1,9 +1,9 @@
 {
-  "setupTasks": [ "mvn clean install", "cp -n .env.example .env"],
+  "setupTasks": [ "mvn clean package", "cp -n .env.example .env"],
   "tasks": {
     "start": {
       "name": "start",
-      "command": "mvn exec:java -Dexec.mainClass=\"src.Main\"",
+      "command": "java -jar target/unleash-java-example-1.0-SNAPSHOT.jar",
       "runAtStart": true,
       "restartOn": {
         "files": ["src/Main.java", ".env"]
