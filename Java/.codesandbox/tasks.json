@@ -3,7 +3,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "java -jar target/unleash-java-example-1.0-SNAPSHOT.jar",
+      "command": "mvn exec:java",
       "runAtStart": true,
       "restartOn": {
         "files": ["src/main/java/Main.java", ".env"]
