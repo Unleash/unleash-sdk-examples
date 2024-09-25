@@ -1,5 +1,5 @@
 {
-  "setupTasks": [ "mvn install"],
+  "setupTasks": ["mvn install"],
   "tasks": {
     "start": {
       "name": "start",
