@@ -1,0 +1,13 @@
+{
+  "setupTasks": ["mvn install"],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "mvn exec:java",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["src/main/java/Main.java", ".env"]
+      }
+    }
+  }
+}

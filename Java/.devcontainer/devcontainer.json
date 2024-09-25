@@ -1,0 +1,6 @@
+{
+  "name": "Java (OpenJDK 17)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
