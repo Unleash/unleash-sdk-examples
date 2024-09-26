@@ -1,6 +1,6 @@
 # Unleash Go SDK
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/Go)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/main/Go)
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-go) and experiment.
 

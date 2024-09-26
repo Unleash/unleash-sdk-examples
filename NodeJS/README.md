@@ -1,6 +1,6 @@
 # node.js Unleash Starter
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/v2/NodeJS)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/main/NodeJS)
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-node) for [node.js](https://nodejs.org/en) and experiment.
 
