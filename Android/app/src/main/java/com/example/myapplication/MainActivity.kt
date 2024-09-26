@@ -10,7 +10,7 @@ import kotlinx.coroutines.isActive
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val unleashInstance = (application as TestApplication).unleash
+        val unleashInstance = (application as MyApplication).unleash
 
         setContent {
             var flagStatus by remember { mutableStateOf("loading") }
