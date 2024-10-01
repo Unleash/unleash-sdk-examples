@@ -18,7 +18,7 @@ public class Program
 
         var settings = new UnleashSettings()
         {
-            AppName = "codesandbox-csharp",
+            AppName = "codesandbox-dotnet",
             UnleashApi = new Uri(url),
             SendMetricsInterval = TimeSpan.FromSeconds(1),
             CustomHttpHeaders = new Dictionary<string, string>()
