@@ -4,4 +4,4 @@
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-java) and experiment.
 
-Check out [Main.java](./src/java/Main.java) for the code. Set your flag name in line `:9`.q
+Check out [Main.java](./src/java/Main.java) for the code. Set your flag name in line `:9`.
