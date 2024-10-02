@@ -1,4 +1,4 @@
-# Unleash Flutter SDK
+# Unleash Swift SDK
 
 Codesandbox not supported yet.
 
