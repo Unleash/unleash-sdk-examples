@@ -5,7 +5,7 @@
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-client-python) for [Python](https://www.python.org/) and experiment.
 
 ```sh
-pip install -r requirements.txt,
+pip install -r requirements.txt
 cp -n .env.example .env
 
 python main.py
