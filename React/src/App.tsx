@@ -7,9 +7,11 @@ export default function App() {
   return (
     <div className="App">
       <p>
-        Flag is <strong>{isEnabled ? "enabled" : "disabled"}</strong>
+        Running in <strong>{process.env.NODE_ENV}</strong> mode.
       </p>
-
+      <p>
+        Flag is <strong>{isEnabled ? "enabled! 😊" : "disabled 😞"}</strong>
+      </p>
       <footer>
         <p>
           Here you can easily get started with{" "}
