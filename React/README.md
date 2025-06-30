@@ -11,7 +11,7 @@ Check out [src/App.tsx](./src/App.tsx) example and [src/index.tsx](./src/index.t
 ### Unleash Connection
 Configure your Unleash connection in [`src/index.tsx`](./src/index.tsx):
 - `url`: Set your Unleash server or Unleash Edge URL.
-- **Client Key** (line 15): Configure your client-side API token
+- `clientKey`: Set your [Frontend token](https://docs.getunleash.io/reference/api-tokens-and-client-keys#frontend-tokens).
 
 ### Feature Flags
 Update feature flag usage in [`src/App.tsx`](./src/App.tsx):
