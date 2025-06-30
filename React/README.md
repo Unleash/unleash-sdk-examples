@@ -15,7 +15,7 @@ Configure your Unleash connection in [`src/index.tsx`](./src/index.tsx):
 
 ### Feature Flags
 Update feature flag usage in [`src/App.tsx`](./src/App.tsx):
-- **Flag Name** (line 5): Change `"example-flag"` to your desired flag name
+- Flag name: Change `"example-flag"` to your desired flag name.
 
 ## Installation & Launch
 
