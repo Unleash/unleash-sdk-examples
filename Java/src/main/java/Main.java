@@ -19,7 +19,8 @@ public class Main {
 
         Unleash unleash = new DefaultUnleash(config);
 
-        while (true) {
+        var count = 0;
+        while (count ++ < 10) {
             boolean featureEnabled = unleash.isEnabled(flag);
             System.out.println("Feature enabled: " + featureEnabled);
             Thread.sleep(1000);
