@@ -3,7 +3,7 @@ module example/unleash_test
 go 1.23.1
 
 require (
-	github.com/Unleash/unleash-client-go/v4 v4.1.3
+	github.com/Unleash/unleash-client-go/v5 v5.0.3
 	github.com/joho/godotenv v1.5.1
 )
 

@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Unleash/unleash-client-go/v4"
+	"github.com/Unleash/unleash-client-go/v5"
 	"github.com/joho/godotenv"
 )
 
