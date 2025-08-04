@@ -17,8 +17,8 @@
     <dependencies>
         <dependency>
             <groupId>io.getunleash</groupId>
-            <artifactId>unleash-java-sdk</artifactId>
-            <version>9.2.4</version>
+            <artifactId>unleash-client-java</artifactId>
+            <version>11.0.2</version>
         </dependency>
     </dependencies>
 
