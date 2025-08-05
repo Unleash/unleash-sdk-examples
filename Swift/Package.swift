@@ -9,13 +9,13 @@ let package = Package(
             .iOS(.v12),
     ],
     dependencies: [
-        .package(url: "https://github.com/Unleash/unleash-proxy-client-swift.git", branch: "main")
+        .package(url: "https://github.com/Unleash/unleash-ios-sdk.git", branch: "main")
     ],
     targets: [
         .executableTarget(
             name: "UnleashExample",
             dependencies: [
-                .product(name: "UnleashProxyClientSwift", package: "unleash-proxy-client-swift")
+                .product(name: "UnleashProxyClientSwift", package: "unleash-ios-sdk")
             ]
         )
     ]
