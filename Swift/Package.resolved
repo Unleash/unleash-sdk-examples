@@ -10,12 +10,12 @@
       }
     },
     {
-      "identity" : "unleash-proxy-client-swift",
+      "identity" : "unleash-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Unleash/unleash-proxy-client-swift.git",
+      "location" : "https://github.com/Unleash/unleash-ios-sdk.git",
       "state" : {
         "branch" : "main",
-        "revision" : "4578bb9cca31fc60ba45a07b6f608b9ed666512c"
+        "revision" : "050a68f41bcbc831d809f3022c97038f4b16c032"
       }
     }
   ],
