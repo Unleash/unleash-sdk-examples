@@ -16,6 +16,6 @@
     "javascript"
   ],
   "dependencies": {
-    "unleash-proxy-client": "3.6.1"
+    "unleash-proxy-client": "3.8.0"
   }
 }
