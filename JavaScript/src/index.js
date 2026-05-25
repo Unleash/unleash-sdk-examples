@@ -11,10 +11,10 @@ unleash.start();
 
 const flag = 'example-flag';
 
-unleash.on('update', () => {
+setInterval(() => {
     if (unleash.isEnabled(flag)) {
         document.getElementById("app").innerHTML = `${flag} is enabled`;
     } else {
         document.getElementById("app").innerHTML = `${flag} is disabled`;
     }
-});
+}, 1000);
