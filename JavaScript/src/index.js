@@ -9,8 +9,12 @@ const unleash = new UnleashClient({
 
 unleash.start();
 
+const flag = 'example-flag';
+
 setInterval(() => {
-    document.getElementById("app").innerHTML = `Flag is ${
-        unleash.isEnabled("example-flag") ? "enabled" : "disabled"
-    }`;
+    if (unleash.isEnabled(flag)) {
+        document.getElementById("app").innerHTML = `${flag} is enabled`;
+    } else {
+        document.getElementById("app").innerHTML = `${flag} is disabled`;
+    }
 }, 1000);
