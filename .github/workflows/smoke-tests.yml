@@ -24,6 +24,7 @@ jobs:
       java: ${{ steps.filter.outputs.java }}
       swift: ${{ steps.filter.outputs.swift }}
       android: ${{ steps.filter.outputs.android }}
+      workflow: ${{ steps.filter.outputs.workflow }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -60,10 +61,12 @@ jobs:
               - 'Swift/**'
             android:
               - 'Android/**'
+            workflow:
+              - '.github/workflows/smoke-tests.yml'
 
   javascript:
     needs: changes
-    if: needs.changes.outputs.javascript == 'true'
+    if: needs.changes.outputs.javascript == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -80,7 +83,7 @@ jobs:
 
   nextjs:
     needs: changes
-    if: needs.changes.outputs.nextjs == 'true'
+    if: needs.changes.outputs.nextjs == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -97,7 +100,7 @@ jobs:
 
   nodejs:
     needs: changes
-    if: needs.changes.outputs.nodejs == 'true'
+    if: needs.changes.outputs.nodejs == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -112,7 +115,7 @@ jobs:
 
   react:
     needs: changes
-    if: needs.changes.outputs.react == 'true'
+    if: needs.changes.outputs.react == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -129,7 +132,7 @@ jobs:
 
   svelte:
     needs: changes
-    if: needs.changes.outputs.svelte == 'true'
+    if: needs.changes.outputs.svelte == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -146,7 +149,7 @@ jobs:
 
   vue:
     needs: changes
-    if: needs.changes.outputs.vue == 'true'
+    if: needs.changes.outputs.vue == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -163,7 +166,7 @@ jobs:
 
   go:
     needs: changes
-    if: needs.changes.outputs.go == 'true'
+    if: needs.changes.outputs.go == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -177,7 +180,7 @@ jobs:
 
   rust:
     needs: changes
-    if: needs.changes.outputs.rust == 'true'
+    if: needs.changes.outputs.rust == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -196,7 +199,7 @@ jobs:
 
   python:
     needs: changes
-    if: needs.changes.outputs.python == 'true'
+    if: needs.changes.outputs.python == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -213,7 +216,7 @@ jobs:
 
   ruby:
     needs: changes
-    if: needs.changes.outputs.ruby == 'true'
+    if: needs.changes.outputs.ruby == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -229,7 +232,7 @@ jobs:
 
   php:
     needs: changes
-    if: needs.changes.outputs.php == 'true'
+    if: needs.changes.outputs.php == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -244,7 +247,7 @@ jobs:
 
   flutter:
     needs: changes
-    if: needs.changes.outputs.flutter == 'true'
+    if: needs.changes.outputs.flutter == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -259,7 +262,7 @@ jobs:
 
   java:
     needs: changes
-    if: needs.changes.outputs.java == 'true'
+    if: needs.changes.outputs.java == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -275,7 +278,7 @@ jobs:
 
   swift:
     needs: changes
-    if: needs.changes.outputs.swift == 'true'
+    if: needs.changes.outputs.swift == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: macos-latest
     defaults:
       run:
@@ -286,7 +289,7 @@ jobs:
 
   android:
     needs: changes
-    if: needs.changes.outputs.android == 'true'
+    if: needs.changes.outputs.android == 'true' || needs.changes.outputs.workflow == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
