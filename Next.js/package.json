@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@unleash/nextjs": "^1.4.4",
-    "next": "14.2.13",
+    "next": "15.5.16",
     "react": "^18",
     "react-dom": "^18"
   },
