@@ -141,6 +141,8 @@ jobs:
         with:
           node-version: lts/*
       - run: npm install
+      - run: npm run check
+      - run: npm run lint
       - run: npm run build
 
   vue:
