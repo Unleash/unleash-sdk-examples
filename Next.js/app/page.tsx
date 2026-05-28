@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import styles from "./page.module.css";
 import { FlagProvider } from "@unleash/nextjs";
