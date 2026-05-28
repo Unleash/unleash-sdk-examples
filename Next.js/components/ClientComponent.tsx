@@ -7,7 +7,7 @@ export default function ClientComponent() {
   const { flagsReady } = useFlagsStatus();
 
   if (!flagsReady) {
-    return "Loading…"
+    return "Loading…";
   }
 
   return (
