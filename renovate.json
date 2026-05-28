@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "timezone": "Europe/Oslo",
+  "schedule": ["after 7pm every weekday", "before 5am every weekday"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackageNames": ["*"],
+      "automerge": true,
+      "minimumReleaseAge": "7 days",
+      "internalChecksFilter": "strict"
+    },
+    {
+      "matchPackagePatterns": ["^unleash-", "^@unleash/"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "minimumReleaseAge": "0 days",
+      "internalChecksFilter": "strict"
+    }
+  ]
+}

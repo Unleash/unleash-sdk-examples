@@ -1,0 +1,308 @@
+name: Smoke Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      javascript: ${{ steps.filter.outputs.javascript }}
+      nextjs: ${{ steps.filter.outputs.nextjs }}
+      nodejs: ${{ steps.filter.outputs.nodejs }}
+      react: ${{ steps.filter.outputs.react }}
+      svelte: ${{ steps.filter.outputs.svelte }}
+      vue: ${{ steps.filter.outputs.vue }}
+      go: ${{ steps.filter.outputs.go }}
+      rust: ${{ steps.filter.outputs.rust }}
+      python: ${{ steps.filter.outputs.python }}
+      ruby: ${{ steps.filter.outputs.ruby }}
+      php: ${{ steps.filter.outputs.php }}
+      flutter: ${{ steps.filter.outputs.flutter }}
+      java: ${{ steps.filter.outputs.java }}
+      swift: ${{ steps.filter.outputs.swift }}
+      android: ${{ steps.filter.outputs.android }}
+      workflow: ${{ steps.filter.outputs.workflow }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            javascript:
+              - 'JavaScript/**'
+            nextjs:
+              - 'Next.js/**'
+            nodejs:
+              - 'Node.js/**'
+            react:
+              - 'React/**'
+            svelte:
+              - 'Svelte/**'
+            vue:
+              - 'Vue/**'
+            go:
+              - 'Go/**'
+            rust:
+              - 'Rust/**'
+            python:
+              - 'Python/**'
+            ruby:
+              - 'Ruby/**'
+            php:
+              - 'PHP/**'
+            flutter:
+              - 'Flutter/**'
+            java:
+              - 'Java/**'
+            swift:
+              - 'Swift/**'
+            android:
+              - 'Android/**'
+            workflow:
+              - '.github/workflows/smoke-tests.yml'
+
+  javascript:
+    needs: changes
+    if: needs.changes.outputs.javascript == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: JavaScript
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: JavaScript/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  nextjs:
+    needs: changes
+    if: needs.changes.outputs.nextjs == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Next.js
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: Next.js/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  nodejs:
+    needs: changes
+    if: needs.changes.outputs.nodejs == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Node.js
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: npm install
+      - run: node --check index.js
+
+  react:
+    needs: changes
+    if: needs.changes.outputs.react == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: React
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: React/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  svelte:
+    needs: changes
+    if: needs.changes.outputs.svelte == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Svelte
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: Svelte/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  vue:
+    needs: changes
+    if: needs.changes.outputs.vue == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Vue
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: Vue/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  go:
+    needs: changes
+    if: needs.changes.outputs.go == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Go
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: Go/go.mod
+      - run: go build ./...
+
+  rust:
+    needs: changes
+    if: needs.changes.outputs.rust == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Rust
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            Rust/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Rust/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+      - run: cargo build
+
+  python:
+    needs: changes
+    if: needs.changes.outputs.python == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+          cache-dependency-path: Python/requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile main.py
+
+  ruby:
+    needs: changes
+    if: needs.changes.outputs.ruby == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Ruby
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby
+          bundler-cache: true
+          working-directory: Ruby
+      - run: ruby -c example.rb
+
+  php:
+    needs: changes
+    if: needs.changes.outputs.php == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: PHP
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+      - run: composer install --no-interaction
+      - run: php -l index.php
+
+  flutter:
+    needs: changes
+    if: needs.changes.outputs.flutter == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Flutter/unleash_example
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: flutter analyze
+
+  java:
+    needs: changes
+    if: needs.changes.outputs.java == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Java
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - run: mvn compile --no-transfer-progress
+
+  swift:
+    needs: changes
+    if: needs.changes.outputs.swift == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: Swift
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift build
+
+  android:
+    needs: changes
+    if: needs.changes.outputs.android == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - run: ./gradlew assembleDebug
