@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier --check . && eslint .",
+    "lint": "prettier --check . && eslint --max-warnings 0 .",
     "format": "prettier --write .",
     "test": "vitest run",
     "ci": "npm run format && npm run lint && npm run test && npm run build"
