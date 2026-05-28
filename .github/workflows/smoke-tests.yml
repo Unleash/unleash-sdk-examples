@@ -80,9 +80,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: npm
-          cache-dependency-path: JavaScript/package-lock.json
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
   nextjs:
@@ -97,9 +95,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: npm
-          cache-dependency-path: Next.js/package-lock.json
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
   nodejs:
@@ -129,9 +125,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: npm
-          cache-dependency-path: React/package-lock.json
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
   svelte:
@@ -146,9 +140,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: npm
-          cache-dependency-path: Svelte/package-lock.json
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
   vue:
@@ -163,9 +155,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: npm
-          cache-dependency-path: Vue/package-lock.json
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
   go:
@@ -180,6 +170,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: Go/go.mod
+      - run: go mod tidy
       - run: go build ./...
 
   rust:
