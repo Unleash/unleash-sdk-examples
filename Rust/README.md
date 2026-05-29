@@ -4,8 +4,16 @@
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-rust-sdk) for [Rust](https://www.rust-lang.org/) and experiment.
 
+## Setup
+
 ```sh
 cp -n .env.example .env
+cargo install cargo-watch
+```
+
+## Run locally
+
+```sh
 cargo watch -x run
 ```
 
