@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Unleash/unleash-go-sdk/v5"
+	unleash "github.com/Unleash/unleash-go-sdk/v6"
 	"github.com/joho/godotenv"
 )
 
@@ -15,25 +15,30 @@ const FlagName = "example-flag"
 
 func main() {
 	err := godotenv.Load(".env")
-
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}
 
-	unleash.Initialize(
-		unleash.WithListener(&unleash.DebugListener{}),
+	err = unleash.Initialize(
 		unleash.WithAppName("codesandbox-go"),
 		unleash.WithUrl(os.Getenv("UNLEASH_API_URL")),
 		unleash.WithCustomHeaders(http.Header{"Authorization": {os.Getenv("UNLEASH_API_TOKEN")}}),
-		unleash.WithRefreshInterval(15*time.Second),
-		unleash.WithMetricsInterval(5*time.Second),
 	)
+	if err != nil {
+		log.Fatalf("Error initializing Unleash: %v", err)
+	}
+	defer unleash.Close()
 
-	timer := time.NewTimer(1 * time.Second)
+	unleash.WaitForReady()
 
-	for {
-		<-timer.C
-		fmt.Printf("\033[32m'%s' enabled? %v\033[0m\n", FlagName, unleash.IsEnabled(FlagName))
-		timer.Reset(3 * time.Second)
+	ticker := time.NewTicker(3 * time.Second)
+	defer ticker.Stop()
+
+	for range ticker.C {
+		if unleash.IsEnabled(FlagName, unleash.FeatureOptions{}) {
+			fmt.Println(FlagName + " is enabled")
+		} else {
+			fmt.Println(FlagName + " is disabled")
+		}
 	}
 }
