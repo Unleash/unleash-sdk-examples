@@ -16,7 +16,7 @@ const FlagName = "example-flag"
 func main() {
 	err := godotenv.Load(".env")
 	if err != nil {
-		log.Fatalf("Error loading .env file")
+		log.Fatalf("error loading .env file: %v", err)
 	}
 
 	err = unleash.Initialize(
@@ -25,11 +25,9 @@ func main() {
 		unleash.WithCustomHeaders(http.Header{"Authorization": {os.Getenv("UNLEASH_API_TOKEN")}}),
 	)
 	if err != nil {
-		log.Fatalf("Error initializing Unleash: %v", err)
+		log.Fatalf("error initializing Unleash: %v", err)
 	}
 	defer unleash.Close()
-
-	unleash.WaitForReady()
 
 	ticker := time.NewTicker(3 * time.Second)
 	defer ticker.Stop()
