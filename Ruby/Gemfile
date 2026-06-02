@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 gem 'dotenv', groups: [:development, :test]
-gem 'unleash', '~> 5.1.0'
+gem 'minitest', groups: [:development, :test]
+gem 'unleash', '~> 6.6'

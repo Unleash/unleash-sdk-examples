@@ -229,6 +229,8 @@ jobs:
           bundler-cache: true
           working-directory: Ruby
       - run: ruby -c example.rb
+      - run: bundle exec ruby -e "require 'unleash'"
+      - run: bundle exec ruby test_example.rb
 
   php:
     needs: changes
