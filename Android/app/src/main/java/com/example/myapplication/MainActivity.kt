@@ -9,6 +9,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import kotlin.time.Duration.Companion.seconds
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                 while (isActive) {
                     val isFlagEnabled = unleashInstance.isEnabled("example-flag")
                     flagStatus = if (isFlagEnabled) "enabled" else "disabled"
-                    delay(3000L)
+                    delay(3.seconds)
                 }
             }
 
