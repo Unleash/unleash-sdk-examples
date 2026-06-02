@@ -23,13 +23,17 @@ class MainActivity : ComponentActivity() {
             LaunchedEffect(Unit) {
                 while (isActive) {
                     val isFlagEnabled = unleashInstance.isEnabled("example-flag")
-                    flagStatus = if (isFlagEnabled) "enabled" else "disabled"
+                    flagStatus = if (isFlagEnabled) {
+                        "Flag is enabled"
+                    } else {
+                        "Flag is disabled"
+                    }
                     delay(3.seconds)
                 }
             }
 
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Text(text = "Flag is $flagStatus!", fontSize = 32.sp)
+                Text(text = flagStatus, fontSize = 32.sp)
             }
         }
 
