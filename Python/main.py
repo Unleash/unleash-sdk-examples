@@ -1,5 +1,5 @@
 import os
-import asyncio
+import time
 
 from dotenv import load_dotenv
 from UnleashClient import UnleashClient
@@ -19,5 +19,8 @@ client = UnleashClient(
 client.initialize_client()
 
 while True:
-    print(f"'{flag}' is enabled: {client.is_enabled(flag)}")
-    asyncio.run(asyncio.sleep(2))
+    if client.is_enabled(flag):
+        print(f"'{flag}' is enabled")
+    else:
+        print(f"'{flag}' is disabled")
+    time.sleep(2)
