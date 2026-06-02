@@ -6,7 +6,7 @@ junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.6.1"
-activityCompose = "1.8.0"
+activityCompose = "1.13.0"
 composeBom = "2024.04.01"
 unleashAndroid = "1.1.1"
 
