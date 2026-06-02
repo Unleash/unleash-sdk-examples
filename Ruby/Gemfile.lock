@@ -1,0 +1,77 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
+    base64 (0.3.0)
+    concurrent-ruby (1.3.6)
+    domain_name (0.6.20240107)
+    dotenv (3.2.0)
+    drb (2.2.3)
+    ffi (1.17.4-aarch64-linux-gnu)
+    ffi (1.17.4-aarch64-linux-musl)
+    ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
+    ffi (1.17.4-x86_64-linux-musl)
+    ffi-compiler (1.4.2)
+      ffi (>= 1.15.5)
+      rake
+    http (5.3.1)
+      addressable (~> 2.8)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      llhttp-ffi (~> 0.5.0)
+    http-cookie (1.1.6)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    ld-eventsource (2.2.4)
+      concurrent-ruby (~> 1.0)
+      http (>= 4.4.1, < 6.0.0)
+    llhttp-ffi (0.5.1)
+      ffi-compiler (~> 1.0)
+      rake (~> 13.0)
+    logger (1.7.0)
+    minitest (6.0.6)
+      drb (~> 2.0)
+      prism (~> 1.5)
+    ostruct (0.6.3)
+    prism (1.9.0)
+    public_suffix (7.0.5)
+    rake (13.4.2)
+    unleash (6.6.0)
+      base64 (~> 0.3.0)
+      ld-eventsource (= 2.2.4)
+      logger (~> 1.6)
+      ostruct (~> 0.1)
+      yggdrasil-engine (~> 1.2.2)
+    yggdrasil-engine (1.2.2-aarch64-linux)
+      ffi (~> 1.17.2)
+    yggdrasil-engine (1.2.2-aarch64-linux-musl)
+      ffi (~> 1.17.2)
+    yggdrasil-engine (1.2.2-arm64-darwin)
+      ffi (~> 1.17.2)
+    yggdrasil-engine (1.2.2-x86_64-darwin)
+      ffi (~> 1.17.2)
+    yggdrasil-engine (1.2.2-x86_64-linux)
+      ffi (~> 1.17.2)
+    yggdrasil-engine (1.2.2-x86_64-linux-musl)
+      ffi (~> 1.17.2)
+
+PLATFORMS
+  aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm64-darwin
+  x86_64-darwin
+  x86_64-linux
+  x86_64-linux-gnu
+  x86_64-linux-musl
+
+DEPENDENCIES
+  dotenv
+  minitest
+  unleash (~> 6.6)
+
+BUNDLED WITH
+   2.5.3
