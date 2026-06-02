@@ -2,3 +2,8 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+p {
+  font-size: 1.5rem;
+  margin-block: 5rem
+}

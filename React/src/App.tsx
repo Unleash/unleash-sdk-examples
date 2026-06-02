@@ -6,9 +6,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <p>
-        Flag is <strong>{isEnabled ? "enabled" : "disabled"}</strong>
-      </p>
+      <h1>Unleash SDK in React</h1>
+      {isEnabled ? (
+        <p>Example flag is <strong>enabled</strong></p>
+      ) : (
+        <p>Example flag is <strong>disabled</strong></p>
+      )}
 
       <footer>
         <p>
