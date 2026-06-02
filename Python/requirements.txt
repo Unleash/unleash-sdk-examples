@@ -1,2 +1,3 @@
 UnleashClient
 python-dotenv
+pytest
