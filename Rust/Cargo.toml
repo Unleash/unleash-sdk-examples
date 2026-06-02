@@ -12,4 +12,4 @@ enum-map = "2.0.3"
 reqwest = { version = "0.12.28", features = ["json"] }
 serde = { version = "1.0.209", features = ["derive"] }
 tokio = { version = "1.40.0", features = ["full"] }
-unleash-api-client = { version = "0.15.0", features = ["async-std", "reqwest"] }
+unleash-api-client = { version = "0.15.0", features = ["reqwest"] }
