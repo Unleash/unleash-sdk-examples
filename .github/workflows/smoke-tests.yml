@@ -213,6 +213,7 @@ jobs:
           cache-dependency-path: Python/requirements.txt
       - run: pip install -r requirements.txt
       - run: python -m py_compile main.py
+      - run: pytest test_main.py
 
   ruby:
     needs: changes
