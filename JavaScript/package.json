@@ -8,10 +8,10 @@
     "lint": "eslint --max-warnings 0 ."
   },
   "devDependencies": {
-    "parcel": "^2.0.0",
-    "@eslint/js": "^9.10.0",
-    "eslint": "^9.10.0",
-    "globals": "^16.0.0"
+    "parcel": "^2.16.4",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0"
   },
   "keywords": [
     "css",
