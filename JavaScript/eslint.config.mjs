@@ -8,5 +8,9 @@ export default [
 			globals: { ...globals.browser }
 		}
 	},
+	{
+		files: ['playwright.config.js', 'tests/**'],
+		languageOptions: { globals: { ...globals.node } }
+	},
 	{ ignores: ['dist/**', '.parcel-cache/**'] }
 ];
