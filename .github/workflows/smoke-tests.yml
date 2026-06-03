@@ -117,6 +117,8 @@ jobs:
           node-version: lts/*
       - run: npm install
       - run: node --check index.js
+      - run: npm run lint
+      - run: npm test
 
   react:
     needs: changes

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch index.js"
+    "start": "node --watch index.js",
+    "lint": "eslint --max-warnings 0 .",
+    "test": "node --test"
   },
   "keywords": [],
   "author": "Ives van Hoorne",
@@ -12,5 +14,10 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "unleash-client": "^6.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0"
   }
 }
