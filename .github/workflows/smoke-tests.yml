@@ -81,6 +81,7 @@ jobs:
         with:
           node-version: lts/*
       - run: npm install
+      - run: npm run lint
       - run: npm run build
 
   nextjs:
