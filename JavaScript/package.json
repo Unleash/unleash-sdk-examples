@@ -5,9 +5,11 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "lint": "eslint --max-warnings 0 ."
+    "lint": "eslint --max-warnings 0 .",
+    "test": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "1.60.0",
     "parcel": "^2.16.4",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.4.1",

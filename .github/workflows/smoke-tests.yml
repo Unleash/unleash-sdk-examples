@@ -81,7 +81,9 @@ jobs:
         with:
           node-version: lts/*
       - run: npm install
+      - run: npx playwright install --with-deps chromium
       - run: npm run lint
+      - run: npm test
       - run: npm run build
 
   nextjs:
