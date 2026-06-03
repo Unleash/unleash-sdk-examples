@@ -4,12 +4,16 @@
   "description": "Unleash JS SDK example",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "lint": "eslint --max-warnings 0 .",
+    "test": "playwright test"
   },
   "devDependencies": {
-    "parcel": "^2.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.2.0"
+    "@playwright/test": "1.60.0",
+    "parcel": "^2.16.4",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0"
   },
   "keywords": [
     "css",
