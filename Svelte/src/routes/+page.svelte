@@ -9,9 +9,11 @@
 	{#if !$flagsReady}
 		<p>Loading...</p>
 	{:else}
-		<p>
-			{$enabled ? 'Feature is enabled!' : 'Feature is disabled!'}
-		</p>
+		{#if $enabled}
+			<p>Feature is enabled!</p>
+		{:else}
+			<p>Feature is disabled!</p>
+		{/if}
 	{/if}
 </section>
 
