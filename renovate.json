@@ -13,7 +13,7 @@
       "internalChecksFilter": "strict"
     },
     {
-      "matchPackagePatterns": ["^unleash-", "^@unleash/"],
+      "matchPackagePatterns": ["^unleash-", "^@unleash/", "^unleash_"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true,
       "minimumReleaseAge": "0 days",
