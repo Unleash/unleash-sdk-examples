@@ -284,9 +284,10 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: temurin
-          java-version: "17"
+          java-version: "25"
           cache: maven
       - run: mvn compile --no-transfer-progress
+      - run: docker compose run --rm app | grep -q "Feature enabled:"
 
   swift:
     needs: changes
