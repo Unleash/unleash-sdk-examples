@@ -5,3 +5,9 @@
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-java-sdk) and experiment.
 
 Check out [Main.java](./src/java/Main.java) for the code. Set your flag name in line `:9`.
+
+## Test locally
+
+```sh
+docker compose run --rm app
+```

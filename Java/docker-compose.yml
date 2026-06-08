@@ -1,0 +1,11 @@
+services:
+  app:
+    image: maven:3.9-eclipse-temurin-17
+    working_dir: /app
+    volumes:
+      - .:/app
+      - maven-cache:/root/.m2
+    command: mvn compile exec:java
+
+volumes:
+  maven-cache:
