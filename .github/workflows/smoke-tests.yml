@@ -286,6 +286,7 @@ jobs:
           java-version: "25"
           cache: maven
       - run: mvn compile --no-transfer-progress
+      - run: docker compose run --rm app | grep -q "Feature enabled:"
 
   swift:
     needs: changes
