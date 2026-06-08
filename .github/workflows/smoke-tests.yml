@@ -177,7 +177,7 @@ jobs:
         working-directory: Go
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version-file: Go/go.mod
       - run: go mod tidy
@@ -277,7 +277,7 @@ jobs:
         working-directory: Java
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
@@ -304,7 +304,7 @@ jobs:
         working-directory: Android
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
