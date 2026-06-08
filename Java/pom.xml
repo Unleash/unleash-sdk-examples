@@ -26,8 +26,8 @@
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version>
+                <artifactId>org.codehaus.mojo:exec-maven-plugin (source)	3.1.0 → 3.6.3</artifactId>
+                <version>3.6.3</version>
                 <configuration>
                     <mainClass>main.java.Main</mainClass>
                 </configuration>
