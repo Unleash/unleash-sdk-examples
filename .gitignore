@@ -12,3 +12,4 @@ devenv.local.nix
 .pre-commit-config.yaml
 
 out/
+.DS_Store
