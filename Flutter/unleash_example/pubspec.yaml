@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  unleash_proxy_client_flutter: 1.5.3
+  unleash_proxy_client_flutter: 1.9.8
 
 
   # The following adds the Cupertino Icons font to your application.
