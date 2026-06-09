@@ -24,6 +24,7 @@ Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
         } else {
             print("example-flag is disabled")
         }
+        fflush(stdout)
     }
 }
 
