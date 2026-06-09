@@ -291,7 +291,7 @@ jobs:
           cache-dependency-path: .NET/dotnet-test.csproj
       - run: dotnet build
       - run: cp .env.example .env
-      - run: docker compose run --rm app | grep -q "is enabled:"
+      - run: docker compose run --rm app | grep -q "'example-flag' is enabled:"
 
   java:
     needs: changes
