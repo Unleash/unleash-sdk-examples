@@ -10,6 +10,12 @@ cp -n .env.example .env
 dotnet watch run
 ```
 
+Or with
+
+```sh
+docker compose run --rm app
+```
+
 Check out [Program.cs](./Program.cs) for the code.
 You can set you instance URL and API client token in `.env`.
 Set your flag name on line `:15`.

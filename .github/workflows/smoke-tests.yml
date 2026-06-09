@@ -25,6 +25,7 @@ jobs:
       ruby: ${{ steps.filter.outputs.ruby }}
       php: ${{ steps.filter.outputs.php }}
       flutter: ${{ steps.filter.outputs.flutter }}
+      dotnet: ${{ steps.filter.outputs.dotnet }}
       java: ${{ steps.filter.outputs.java }}
       swift: ${{ steps.filter.outputs.swift }}
       android: ${{ steps.filter.outputs.android }}
@@ -59,6 +60,8 @@ jobs:
               - 'PHP/**'
             flutter:
               - 'Flutter/**'
+            dotnet:
+              - '.NET/**'
             java:
               - 'Java/**'
             swift:
@@ -271,6 +274,24 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter build web
+
+  dotnet:
+    needs: changes
+    if: needs.changes.outputs.dotnet == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .NET
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+          cache: true
+          cache-dependency-path: .NET/dotnet-test.csproj
+      - run: dotnet build
+      - run: cp .env.example .env
+      - run: docker compose run --rm app | grep -qE "'example-flag' is (enabled|disabled)"
 
   java:
     needs: changes

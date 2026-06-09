@@ -27,11 +27,26 @@ public class Program
             }
         };
 
-        var unleash =  new DefaultUnleash(settings);
+        var unleash = new DefaultUnleash(settings);
 
-        while (true) {
-            Console.WriteLine($"'{flag}' is enabled: {unleash.IsEnabled(flag)}");
-            await Task.Delay(1000);
+        try
+        {
+            while (true)
+            {
+                if (unleash.IsEnabled(flag))
+                {
+                    Console.WriteLine($"'{flag}' is enabled");
+                }
+                else
+                {
+                    Console.WriteLine($"'{flag}' is disabled");
+                }
+                await Task.Delay(1000);
+            }
+        }
+        finally
+        {
+            unleash?.Dispose();
         }
     }
 }
