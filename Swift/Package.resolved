@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Unleash/unleash-ios-sdk.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "050a68f41bcbc831d809f3022c97038f4b16c032"
+        "revision" : "050a68f41bcbc831d809f3022c97038f4b16c032",
+        "version" : "2.4.0"
       }
     }
   ],
