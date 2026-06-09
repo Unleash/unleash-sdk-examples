@@ -4,19 +4,29 @@
   "timezone": "Europe/Oslo",
   "schedule": ["after 7pm every weekday", "before 5am every weekday"],
   "labels": ["dependencies"],
-  "assignees": ["krzychukula"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
       "matchPackageNames": ["*"],
       "automerge": true,
+      "assignees": ["krzychukula"],
       "minimumReleaseAge": "7 days",
+      "internalChecksFilter": "strict"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["*"],
+      "automerge": true,
+      "assignees": ["krzychukula"],
+      "minimumReleaseAge": "14 days",
       "internalChecksFilter": "strict"
     },
     {
       "matchPackagePatterns": ["^unleash-", "^@unleash/", "^unleash_"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true,
+      "autoApprove": true,
+      "assignees": ["krzychukula"],
       "minimumReleaseAge": "0 days",
       "internalChecksFilter": "strict"
     }
