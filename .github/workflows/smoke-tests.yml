@@ -258,6 +258,9 @@ jobs:
           php-version: "8.3"
       - run: composer install --no-interaction
       - run: php -l index.php
+      - run: cp .env.example .env
+      - run: |
+          php index.php | grep -qE "example-flag: (enabled|disabled)"
 
   flutter:
     needs: changes
