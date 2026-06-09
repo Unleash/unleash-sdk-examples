@@ -22,3 +22,9 @@ Then visit [http://0.0.0.0:8080](http://0.0.0.0:8080)
 Check out [index.php](./index.php) for the code. Set your flag name in line `:30`. Put you instance URL and API client token in `.env`.
 
 This starter starts a PHP web server on [localhost:8080](http://localhost:8080).
+
+
+For updating dependencies `composer update` with docker you can run:
+```sh
+docker compose run --rm app composer update --no-interaction
+```
