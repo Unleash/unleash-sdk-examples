@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": ">=8.2",
         "unleash/client": "^2.5",
         "guzzlehttp/guzzle": "^7.9",
         "symfony/cache": "^6.0 | ^7.0",
