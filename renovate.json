@@ -4,6 +4,7 @@
   "timezone": "Europe/Oslo",
   "schedule": ["after 7pm every weekday", "before 5am every weekday"],
   "labels": ["dependencies"],
+  "assignees": ["krzychukula"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
