@@ -33,11 +33,11 @@ public class Program
         {
             if (unleash.IsEnabled(flag))
             {
-                Console.WriteLine($"'{flag}' is enabled: true");
+                Console.WriteLine($"'{flag}' is enabled");
             }
             else
             {
-                Console.WriteLine($"'{flag}' is enabled: false");
+                Console.WriteLine($"'{flag}' is disabled");
             }
             await Task.Delay(1000);
         }
