@@ -27,10 +27,10 @@ echo str_pad(' ',4096, "\u{200B}")."\n"; // Fill browser buffer to force flush
 
 $i = 0;
 while ($i++ < 30) {
-    if ($unleash->isEnabled("example-flag")) {
-        echo "example-flag: enabled \n";
+    if ($unleash->isEnabled('example-flag')) {
+        echo 'example-flag is enabled' . PHP_EOL;
     } else {
-        echo "example-flag: disabled \n";
+        echo 'example-flag is disabled' . PHP_EOL;
     }
 
     sleep(3);
