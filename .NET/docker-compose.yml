@@ -1,0 +1,11 @@
+services:
+  app:
+    image: mcr.microsoft.com/dotnet/sdk:9.0
+    working_dir: /app
+    volumes:
+      - .:/app
+      - nuget-cache:/root/.nuget
+    command: dotnet run
+
+volumes:
+  nuget-cache:
