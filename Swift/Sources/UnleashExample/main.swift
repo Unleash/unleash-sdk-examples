@@ -18,10 +18,12 @@ var unleashClient = UnleashProxyClientSwift.UnleashClient(
 unleashClient.start()
 
 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-    if unleashClient.isEnabled(name: "example-flag") {
-        print("example-flag is enabled")
-    } else {
-        print("example-flag is disabled")
+    MainActor.assumeIsolated {
+        if unleashClient.isEnabled(name: "example-flag") {
+            print("example-flag is enabled")
+        } else {
+            print("example-flag is disabled")
+        }
     }
 }
 
