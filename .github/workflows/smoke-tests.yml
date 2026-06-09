@@ -261,6 +261,13 @@ jobs:
       - run: cp .env.example .env
       - run: |
           php index.php | grep -qE "example-flag: (enabled|disabled)"
+      - run: docker compose up -d
+      - run: |
+          until curl -s --max-time 5 http://localhost:8080 | grep -qE "example-flag: (enabled|disabled)"; do
+            sleep 2
+          done
+        timeout-minutes: 2
+      - run: docker compose down
 
   flutter:
     needs: changes
