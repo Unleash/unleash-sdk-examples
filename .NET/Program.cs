@@ -29,8 +29,16 @@ public class Program
 
         var unleash =  new DefaultUnleash(settings);
 
-        while (true) {
-            Console.WriteLine($"'{flag}' is enabled: {unleash.IsEnabled(flag)}");
+        while (true)
+        {
+            if (unleash.IsEnabled(flag))
+            {
+                Console.WriteLine($"'{flag}' is enabled: true");
+            }
+            else
+            {
+                Console.WriteLine($"'{flag}' is enabled: false");
+            }
             await Task.Delay(1000);
         }
     }
