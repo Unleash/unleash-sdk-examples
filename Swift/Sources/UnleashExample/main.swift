@@ -1,9 +1,15 @@
 import Foundation
+import SwiftDotenv
 import UnleashProxyClientSwift
 
-var unleashClient =  UnleashProxyClientSwift.UnleashClientBase(
-    unleashUrl: "https://app.unleash-hosted.com/demo/api/frontend",
-    clientKey: "demo-app:dev.95ae66ab673bf467facb68b2487904f4891064d26b47e89ca498063d",
+try? Dotenv.configure()
+
+let unleashUrl = Dotenv["UNLEASH_API_URL"]?.stringValue ?? ""
+let clientKey = Dotenv["UNLEASH_CLIENT_KEY"]?.stringValue ?? ""
+
+var unleashClient = UnleashProxyClientSwift.UnleashClient(
+    unleashUrl: unleashUrl,
+    clientKey: clientKey,
     refreshInterval: 15,
     appName: "codesandbox-swift",
     context: [:]
@@ -12,7 +18,11 @@ var unleashClient =  UnleashProxyClientSwift.UnleashClientBase(
 unleashClient.start()
 
 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-    print("Is enabled", unleashClient.isEnabled(name: "example-flag"))
+    if unleashClient.isEnabled(name: "example-flag") {
+        print("example-flag is enabled")
+    } else {
+        print("example-flag is disabled")
+    }
 }
 
 RunLoop.main.run()
