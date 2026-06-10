@@ -4,6 +4,8 @@
 
 Here you can get started with the [Unleash Next.js SDK](https://github.com/Unleash/unleash-nextjs-sdk) and experiment with feature flags on the client side.
 
+For full documentation, see the [Next.js SDK docs](https://docs.getunleash.io/sdks/next-js) — that's the main place to learn more.
+
 ## Getting started
 
 ```sh
