@@ -1,4 +1,4 @@
-import { useFlag, useVariant } from "@unleash/proxy-client-react";
+import { useFlag } from "@unleash/proxy-client-react";
 import "./styles.css";
 
 export default function App() {
