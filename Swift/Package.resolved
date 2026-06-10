@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "swift-dotenv",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebarndog/swift-dotenv.git",
+      "state" : {
+        "revision" : "d13062940a3cdb2b13efa22ecc83b07b21c2e8dc",
+        "version" : "2.1.0"
+      }
+    },
+    {
       "identity" : "swifteventbus",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cesarferreira/SwiftEventBus.git",
@@ -14,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Unleash/unleash-ios-sdk.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "050a68f41bcbc831d809f3022c97038f4b16c032"
+        "revision" : "050a68f41bcbc831d809f3022c97038f4b16c032",
+        "version" : "2.4.0"
       }
     }
   ],

@@ -332,7 +332,10 @@ jobs:
         working-directory: Swift
     steps:
       - uses: actions/checkout@v6
+      - uses: swift-actions/setup-swift@v3
       - run: swift build
+      - run: cp .env.example .env
+      - run: swift run 2>&1 | grep -qE "example-flag is (enabled|disabled)"
 
   android:
     needs: changes
