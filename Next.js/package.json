@@ -8,31 +8,28 @@
     "start": "next start",
     "lint": "prettier --check . && eslint --max-warnings 0 .",
     "format": "prettier --write .",
-    "test": "vitest run",
-    "ci": "npm run format && npm run lint && npm run test && npm run build"
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "ci": "npm run format && npm run lint && npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
-    "@unleash/nextjs": "^1.4.4",
-    "next": "15.5.19",
-    "react": "^18",
-    "react-dom": "^18"
+    "@unleash/nextjs": "^1.6.4",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "overrides": {
     "postcss": "^8.5.10"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
-    "@types/node": "^24.0.0",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@vitejs/plugin-react": "^6.0.2",
+    "@playwright/test": "^1.0.0",
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
-    "eslint-config-next": "^16.2.6",
+    "eslint-config-next": "^16.2.9",
     "eslint-config-prettier": "^10.1.8",
-    "jsdom": "^29.1.1",
-    "prettier": "^3.8.3",
-    "typescript": "^5",
-    "vitest": "^4.1.7"
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3"
   }
 }
