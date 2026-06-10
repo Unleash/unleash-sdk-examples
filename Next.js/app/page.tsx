@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "./page.module.css";
-import { FlagProvider } from "@unleash/nextjs";
+import { FlagProvider } from "@unleash/nextjs/client";
 import ClientComponent from "../components/ClientComponent";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (

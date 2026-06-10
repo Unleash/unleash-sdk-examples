@@ -2,8 +2,8 @@
 
 [![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Unleash/unleash-sdk-examples/tree/main/Next.js)
 
-Here you can easily get started with [Unleash SDK](https://github.com/Unleash/unleash-nextjs-sdk) and experiment.
+Here you can get started with the [Unleash Next.js SDK](https://github.com/Unleash/unleash-nextjs-sdk) and experiment with feature flags on the client side.
 
-Check out [components/ClientComponent.tsx](./components/ClientComponent.tsx) for the code. Flag provider is set up in [app/page.tsx](./app/page.tsx). Put you instance URL and API client token in `.env`.
+Put your instance URL and frontend API token in `.env` (see `.env.example`). The flag provider and hook are in [components/ClientComponent.tsx](./components/ClientComponent.tsx).
 
-More advanced examples are available in [Unleash/unleash-nextjs-sdk/example](https://github.com/Unleash/unleash-nextjs-sdk/tree/main/example).
+More advanced examples (SSR, middleware, bootstrap) are available in [Unleash/unleash-nextjs-sdk/example](https://github.com/Unleash/unleash-nextjs-sdk/tree/main/example).

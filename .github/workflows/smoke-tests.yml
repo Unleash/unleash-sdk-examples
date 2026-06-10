@@ -102,6 +102,7 @@ jobs:
         with:
           node-version: lts/*
       - run: npm install
+      - run: npx playwright install --with-deps chromium
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test

@@ -1,6 +1,6 @@
 "use client";
 
-import { useFlag, useFlagsStatus } from "@unleash/nextjs";
+import { useFlag, useFlagsStatus } from "@unleash/nextjs/client";
 
 export default function ClientComponent() {
   const isEnabled = useFlag("example-flag");
@@ -10,9 +10,13 @@ export default function ClientComponent() {
     return "Loading…";
   }
 
-  return (
-    <>
-      Feature toggle is: <strong>{isEnabled ? "ENABLED" : "DISABLED"}</strong>
-    </>
+  return isEnabled ? (
+    <p>
+      Example flag is <strong>enabled</strong>
+    </p>
+  ) : (
+    <p>
+      Example flag is <strong>disabled</strong>
+    </p>
   );
 }
