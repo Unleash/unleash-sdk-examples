@@ -101,6 +101,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
+      - run: cp .env.example .env
       - run: npm install
       - run: npx playwright install --with-deps chromium
       - run: npm run lint
