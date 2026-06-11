@@ -29,6 +29,7 @@ jobs:
       java: ${{ steps.filter.outputs.java }}
       swift: ${{ steps.filter.outputs.swift }}
       android: ${{ steps.filter.outputs.android }}
+      react-native: ${{ steps.filter.outputs.react-native }}
       workflow: ${{ steps.filter.outputs.workflow }}
     steps:
       - uses: actions/checkout@v6
@@ -68,6 +69,8 @@ jobs:
               - 'Swift/**'
             android:
               - 'Android/**'
+            react-native:
+              - 'ReactNative/**'
             workflow:
               - '.github/workflows/smoke-tests.yml'
 
@@ -355,3 +358,23 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v4
       - run: ./gradlew assembleDebug
+
+  react-native:
+    needs: changes
+    if: needs.changes.outputs.react-native == 'true' || needs.changes.outputs.workflow == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ReactNative
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+      - run: cp .env.example .env
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
