@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Unleash/unleash-ios-sdk.git", from: "2.4.0"),
-        .package(url: "https://github.com/thebarndog/swift-dotenv.git", from: "2.0.0"),
+        .package(url: "https://github.com/thebarndog/swift-dotenv.git", from: "2.1.0"),
     ],
     targets: [
         .executableTarget(
