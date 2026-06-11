@@ -31,6 +31,6 @@
     "preview": "vite preview",
     "lint": "eslint --max-warnings 0 .",
     "test": "playwright test",
-    "ci": "npm run lint && npm test && npm run build"
+    "ci": "pnpm run lint && pnpm test && pnpm run build"
   }
 }

@@ -6,7 +6,7 @@ module.exports = defineConfig({
         baseURL: 'http://localhost:1234',
     },
     webServer: {
-        command: 'npm start',
+        command: 'pnpm start',
         url: 'http://localhost:1234',
         reuseExistingServer: !process.env.CI,
     },

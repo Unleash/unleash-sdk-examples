@@ -6,7 +6,7 @@ export default defineConfig({
     baseURL: "http://localhost:8081",
   },
   webServer: {
-    command: "npm start",
+    command: "pnpm start",
     url: "http://localhost:8081",
     reuseExistingServer: !process.env.CI,
   },

@@ -3,7 +3,7 @@
 	"setupTasks": [
 		{
 			"name": "Install Dependencies",
-			"command": "yarn install"
+			"command": "pnpm install"
 		}
 	],
 
@@ -11,7 +11,7 @@
 	"tasks": {
 		"dev": {
 			"name": "dev",
-			"command": "yarn dev",
+			"command": "pnpm dev",
 			"runAtStart": true,
 			"preview": {
 				"port": 5173
@@ -19,37 +19,37 @@
 		},
 		"build": {
 			"name": "build",
-			"command": "yarn build",
+			"command": "pnpm build",
 			"runAtStart": false
 		},
 		"preview": {
 			"name": "preview",
-			"command": "yarn preview",
+			"command": "pnpm preview",
 			"runAtStart": false
 		},
 		"check": {
 			"name": "check",
-			"command": "yarn check",
+			"command": "pnpm check",
 			"runAtStart": false
 		},
 		"check:watch": {
 			"name": "check:watch",
-			"command": "yarn check:watch",
+			"command": "pnpm check:watch",
 			"runAtStart": false
 		},
 		"lint": {
 			"name": "lint",
-			"command": "yarn lint",
+			"command": "pnpm lint",
 			"runAtStart": false
 		},
 		"format": {
 			"name": "format",
-			"command": "yarn format",
+			"command": "pnpm format",
 			"runAtStart": false
 		},
 		"install": {
 			"name": "install dependencies",
-			"command": "yarn install"
+			"command": "pnpm install"
 		}
 	}
 }

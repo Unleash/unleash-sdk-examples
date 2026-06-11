@@ -10,7 +10,7 @@
     "lint": "eslint --max-warnings 0 .",
     "format": "prettier --write .",
     "test": "playwright test",
-    "ci": "npm run format && npm run lint && npm run test && npm run build"
+    "ci": "pnpm run format && pnpm run lint && pnpm run test && pnpm run build"
   },
   "dependencies": {
     "@unleash/proxy-client-vue": "^0.1.6",

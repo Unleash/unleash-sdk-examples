@@ -27,7 +27,7 @@
     "lint": "prettier --check .",
     "test": "playwright test",
     "typecheck": "tsc --noEmit",
-    "ci": "npm run lint && npm run typecheck && npm run test && npm run build"
+    "ci": "pnpm run format && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build"
   },
   "private": true
 }

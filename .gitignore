@@ -13,3 +13,9 @@ devenv.local.nix
 
 out/
 .DS_Store
+
+# pnpm
+node_modules/
+package-lock.json
+
+.parcel-cache/

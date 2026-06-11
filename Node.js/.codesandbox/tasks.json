@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "yarn install"
+      "command": "pnpm install"
     },
     {
       "name": "Copy .env file",
@@ -15,12 +15,12 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
+      "command": "pnpm start",
       "runAtStart": true
     },
     "install": {
       "name": "install dependencies",
-      "command": "yarn install"
+      "command": "pnpm install"
     }
   }
 }

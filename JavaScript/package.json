@@ -6,7 +6,8 @@
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
     "lint": "eslint --max-warnings 0 .",
-    "test": "playwright test"
+    "test": "playwright test",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build"
   },
   "devDependencies": {
     "@playwright/test": "1.60.0",

@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "test": "playwright test",
     "typecheck": "tsc --noEmit",
-    "ci": "npm run format && npm run lint && npm run typecheck && npm run test && npm run build"
+    "ci": "pnpm run format && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build"
   },
   "dependencies": {
     "@unleash/nextjs": "^1.6.4",
