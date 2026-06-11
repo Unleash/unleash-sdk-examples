@@ -9,6 +9,6 @@ trustPolicy: no-downgrade
 minimumReleaseAge: 10080
 minimumReleaseAgeIgnoreMissingTime: false
 minimumReleaseAgeExclude:
-  - "@unleash/proxy-client-vue"
-  - "unleash-proxy-client"
-  - "prettier"
+  - '@unleash/proxy-client-vue'
+  - 'unleash-proxy-client'
+  - 'prettier'
