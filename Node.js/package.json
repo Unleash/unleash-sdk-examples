@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node --watch index.js",
     "lint": "eslint --max-warnings 0 .",
-    "test": "node --test"
+    "test": "node --test",
+    "ci": "pnpm run lint && pnpm run test"
   },
   "keywords": [],
   "author": "Ives van Hoorne",

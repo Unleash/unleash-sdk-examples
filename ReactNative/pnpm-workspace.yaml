@@ -1,9 +1,11 @@
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - "semver@6.3.1"
+  - "ua-parser-js@1.0.41"
 
 # The minimum age of a release to be considered for dependency installation.
 # The value is in minutes (1440 minutes = 1 day).
-# 10 080 minutes = 7 days
-minimumReleaseAge: 10080
+minimumReleaseAge: 1440
 minimumReleaseAgeIgnoreMissingTime: false
 minimumReleaseAgeExclude:
   - "@unleash/unleash-react-native-sdk"
@@ -11,4 +13,4 @@ minimumReleaseAgeExclude:
   - "prettier"
   - "@types/react"
   - "expo"
-  - "expo-*"
+  - "caniuse-lite"
