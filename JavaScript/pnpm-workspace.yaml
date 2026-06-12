@@ -1,12 +1,16 @@
 allowBuilds:
   "@parcel/watcher": true
+  '@swc/core': true
+  lmdb: true
+  msgpackr-extract: true
 
 trustPolicy: no-downgrade
 
 # The minimum age of a release to be considered for dependency installation.
 # The value is in minutes (1440 minutes = 1 day).
 # 10 080 minutes = 7 days
-minimumReleaseAge: 10080
+minimumReleaseAge: 2880
 minimumReleaseAgeIgnoreMissingTime: false
 minimumReleaseAgeExclude:
   - "unleash-proxy-client"
+  - "caniuse-lite"
