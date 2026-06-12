@@ -4,4 +4,9 @@
 
 Here you can easily get started with [Unleash SDK](https://github.com/Unleash/proxy-client-vue) for [Vue](https://vuejs.org/) and experiment.
 
+```sh
+pnpm install
+pnpm dev
+```
+
 Check out [src/components/HelloWorld.vue](./src/components/HelloWorld.vue) example and [src/App.vue](./src/App.vue) with SDK configuration.

@@ -4,4 +4,9 @@
 
 Here you can easily get started with the [Unleash SDK](https://github.com/Unleash/unleash-js-sdk) for JavaScript.
 
+```sh
+pnpm install
+pnpm dev
+```
+
 Check out the [src/index.js](./src/index.js) example.
