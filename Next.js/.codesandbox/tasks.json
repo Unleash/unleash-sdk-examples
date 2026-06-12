@@ -21,7 +21,7 @@
         "port": 3000
       },
       "restartOn": {
-        "files": ["../pnpm-lock.yaml"]
+        "files": ["./pnpm-lock.yaml"]
       }
     },
     "build": {
