@@ -5,10 +5,20 @@ trustPolicy: no-downgrade
 
 # The minimum age of a release to be considered for dependency installation.
 # The value is in minutes (1440 minutes = 1 day).
-# 10 080 minutes = 7 days
-minimumReleaseAge: 10080
+minimumReleaseAge: 1440
 minimumReleaseAgeIgnoreMissingTime: false
 minimumReleaseAgeExclude:
   - '@unleash/proxy-client-vue'
   - 'unleash-proxy-client'
   - 'prettier'
+  - 'vue@3.5.38'
+  - 'postcss-selector-parser@7.1.4'
+  - '@vue/shared@3.5.38'
+  - '@vue/compiler-core@3.5.38'
+  - '@vue/compiler-dom@3.5.38'
+  - '@vue/compiler-sfc@3.5.38'
+  - '@vue/compiler-ssr@3.5.38'
+  - '@vue/reactivity@3.5.38'
+  - '@vue/runtime-core@3.5.38'
+  - '@vue/runtime-dom@3.5.38'
+  - '@vue/server-renderer@3.5.38'
