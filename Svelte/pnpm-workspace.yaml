@@ -1,0 +1,21 @@
+allowBuilds:
+  esbuild: true
+  svelte-preprocess: true
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - svelte-check@4.6.0
+  - chokidar@4.0.3
+
+# The minimum age of a release to be considered for dependency installation.
+# The value is in minutes (1440 minutes = 1 day).
+# 2880 minutes = 2 days
+minimumReleaseAge: 2880
+minimumReleaseAgeIgnoreMissingTime: false
+minimumReleaseAgeExclude:
+  - '@unleash/proxy-client-svelte'
+  - 'unleash-proxy-client'
+  - 'prettier'
+  - '@types/node'
+  - '@sveltejs/kit'
+  - 'postcss-selector-parser'

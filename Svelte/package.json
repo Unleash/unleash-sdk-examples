@@ -11,11 +11,12 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint --max-warnings 0 .",
 		"format": "prettier --write .",
-		"ci": "npm run format && npm run check && npm run lint && npm run test && npm run build"
+		"ci": "pnpm run format && pnpm run check && pnpm run lint && pnpm run test && pnpm run build"
 	},
 	"overrides": {
 		"cookie": "^1.0.0"
 	},
+	"packageManager": "pnpm@11.5.3+sha512.7ac1c919341c213a34dc0d02afb7143c5c26ac26ee8c4782deea821b8ac64d2134a081fd8941dae6e29bbb48f58dfc2b7fbceeccc07cb2f09d219d342a4969ed",
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@fontsource/fira-mono": "^5.1.0",

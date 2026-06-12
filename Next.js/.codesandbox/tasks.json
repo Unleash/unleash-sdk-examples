@@ -7,7 +7,7 @@
     },
     {
       "name": "Install Dependencies",
-      "command": "npm install"
+      "command": "pnpm install"
     }
   ],
 
@@ -15,28 +15,28 @@
   "tasks": {
     "dev": {
       "name": "Start Dev Server",
-      "command": "npm run dev",
+      "command": "pnpm dev",
       "runAtStart": true,
       "preview": {
         "port": 3000
       },
       "restartOn": {
-        "files": ["./package-lock.json"]
+        "files": ["./pnpm-lock.yaml"]
       }
     },
     "build": {
       "name": "Build",
-      "command": "npm run build",
+      "command": "pnpm build",
       "runAtStart": false
     },
     "lint": {
       "name": "Lint",
-      "command": "npm run lint",
+      "command": "pnpm lint",
       "runAtStart": false
     },
     "install": {
       "name": "Install Dependencies",
-      "command": "npm install",
+      "command": "pnpm install",
       "restartOn": {
         "files": ["./package.json"]
       }

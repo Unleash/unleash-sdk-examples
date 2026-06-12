@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "test": "playwright test",
     "typecheck": "tsc --noEmit",
-    "ci": "npm run format && npm run lint && npm run typecheck && npm run test && npm run build"
+    "ci": "pnpm run format && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build"
   },
   "dependencies": {
     "@unleash/nextjs": "^1.6.4",
@@ -21,6 +21,7 @@
   "overrides": {
     "postcss": "^8.5.10"
   },
+  "packageManager": "pnpm@11.5.3+sha512.7ac1c919341c213a34dc0d02afb7143c5c26ac26ee8c4782deea821b8ac64d2134a081fd8941dae6e29bbb48f58dfc2b7fbceeccc07cb2f09d219d342a4969ed",
   "devDependencies": {
     "@playwright/test": "^1.0.0",
     "@types/node": "^25.9.2",

@@ -10,8 +10,8 @@ For full documentation, see the [Next.js SDK docs](https://docs.getunleash.io/sd
 
 ```sh
 cp .env.example .env
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.

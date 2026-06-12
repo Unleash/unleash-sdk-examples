@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node --watch index.js",
     "lint": "eslint --max-warnings 0 .",
-    "test": "node --test"
+    "test": "node --test",
+    "ci": "pnpm run lint && pnpm run test"
   },
   "keywords": [],
   "author": "Ives van Hoorne",
@@ -15,6 +16,7 @@
     "dotenv": "^16.4.5",
     "unleash-client": "^6.11.0"
   },
+  "packageManager": "pnpm@11.5.3+sha512.7ac1c919341c213a34dc0d02afb7143c5c26ac26ee8c4782deea821b8ac64d2134a081fd8941dae6e29bbb48f58dfc2b7fbceeccc07cb2f09d219d342a4969ed",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.4.1",

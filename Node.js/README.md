@@ -6,9 +6,9 @@ Here you can easily get started with [Unleash SDK](https://github.com/Unleash/un
 
 ```sh
 cp -n .env.example .env
-npm install
+pnpm install
 
-npm start
+pnpm start
 ```
 
 Check out [index.js](./index.js) for the code.

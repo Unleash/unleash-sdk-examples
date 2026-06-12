@@ -8,12 +8,12 @@ Check out [App.tsx](./App.tsx) for the full example.
 
 ```sh
 cp .env.example .env
-npm install
-npm start
+pnpm install
+pnpm start
 ```
 
 Open [http://localhost:8081](http://localhost:8081) in your browser.
 
-To run on a device or simulator, use `npm run ios` or `npm run android`.
+To run on a device or simulator, use `pnpm ios` or `pnpm android`.
 
 More in-depth documentation is available in the [SDK repository](https://github.com/Unleash/unleash-react-native-sdk) and [Unleash docs](https://docs.getunleash.io/sdks/react-native).

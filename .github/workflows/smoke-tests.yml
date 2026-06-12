@@ -83,14 +83,17 @@ jobs:
         working-directory: JavaScript
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
-      - run: npm install
-      - run: npx playwright install --with-deps chromium
-      - run: npm run lint
-      - run: npm test
-      - run: npm run build
+          cache: 'pnpm'
+          cache-dependency-path: JavaScript/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run lint
+      - run: pnpm test
+      - run: pnpm run build
 
   nextjs:
     needs: changes
@@ -101,16 +104,19 @@ jobs:
         working-directory: Next.js
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
+          cache: 'pnpm'
+          cache-dependency-path: Next.js/pnpm-lock.yaml
       - run: cp .env.example .env
-      - run: npm install
-      - run: npx playwright install --with-deps chromium
-      - run: npm run lint
-      - run: npm run typecheck
-      - run: npm test
-      - run: npm run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run lint
+      - run: pnpm run typecheck
+      - run: pnpm test
+      - run: pnpm run build
 
   nodejs:
     needs: changes
@@ -121,13 +127,16 @@ jobs:
         working-directory: Node.js
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
-      - run: npm install
+          cache: 'pnpm'
+          cache-dependency-path: Node.js/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
       - run: node --check index.js
-      - run: npm run lint
-      - run: npm test
+      - run: pnpm run lint
+      - run: pnpm test
 
   react:
     needs: changes
@@ -138,14 +147,17 @@ jobs:
         working-directory: React
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
-      - run: npm install
-      - run: npx playwright install --with-deps chromium
-      - run: npm run lint
-      - run: npm test
-      - run: npm run build
+          cache: 'pnpm'
+          cache-dependency-path: React/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run lint
+      - run: pnpm test
+      - run: pnpm run build
 
   svelte:
     needs: changes
@@ -156,14 +168,17 @@ jobs:
         working-directory: Svelte
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
-      - run: npm install
-      - run: npm run check
-      - run: npm run lint
-      - run: npm test
-      - run: npm run build
+          cache: 'pnpm'
+          cache-dependency-path: Svelte/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run check
+      - run: pnpm run lint
+      - run: pnpm test
+      - run: pnpm run build
 
   vue:
     needs: changes
@@ -174,14 +189,17 @@ jobs:
         working-directory: Vue
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
-      - run: npm install
-      - run: npm run lint
-      - run: npx playwright install --with-deps chromium
-      - run: npm test
-      - run: npm run build
+          cache: 'pnpm'
+          cache-dependency-path: Vue/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test
+      - run: pnpm run build
 
   go:
     needs: changes
@@ -368,13 +386,16 @@ jobs:
         working-directory: ReactNative
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
+          cache: 'pnpm'
+          cache-dependency-path: ReactNative/pnpm-lock.yaml
       - run: cp .env.example .env
-      - run: npm install
-      - run: npx playwright install --with-deps chromium
-      - run: npm run lint
-      - run: npm run typecheck
-      - run: npm test
-      - run: npm run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run lint
+      - run: pnpm run typecheck
+      - run: pnpm test
+      - run: pnpm run build
