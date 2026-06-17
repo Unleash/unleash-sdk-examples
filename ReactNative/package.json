@@ -6,8 +6,8 @@
     "@unleash/unleash-react-native-sdk": "*",
     "expo": "~56.0.9",
     "expo-status-bar": "~56.0.4",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "react-native": "0.85.3",
     "react-native-web": "^0.21.2",
     "unleash-proxy-client": "*"
