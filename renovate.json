@@ -10,7 +10,7 @@
       "matchPackageNames": ["*"],
       "automerge": true,
       "assignees": ["krzychukula"],
-      "minimumReleaseAge": "7 days",
+      "minimumReleaseAge": "8 days",
       "internalChecksFilter": "strict"
     },
     {
