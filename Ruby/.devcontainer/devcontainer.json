@@ -1,6 +1,6 @@
 {
   "name": "Devcontainer",
-  "image": "mcr.microsoft.com/devcontainers/ruby:3.4-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/ruby:4.0-bookworm",
   "customizations": {
     "vscode": {
       "extensions": ["shopify.ruby-lsp"]
