@@ -270,6 +270,7 @@ jobs:
       - run: ruby -c example.rb
       - run: bundle exec ruby -e "require 'unleash'"
       - run: bundle exec ruby test_example.rb
+      - run: docker compose run --rm test
 
   php:
     needs: changes

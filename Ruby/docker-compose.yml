@@ -1,0 +1,19 @@
+services:
+  app:
+    image: ruby:4.0
+    working_dir: /app
+    volumes:
+      - .:/app
+      - bundle-cache:/usr/local/bundle
+    command: sh -c "[ -f .env ] || cp .env.example .env && bundle install && bundle exec ruby example.rb"
+
+  test:
+    image: ruby:4.0
+    working_dir: /app
+    volumes:
+      - .:/app
+      - bundle-cache:/usr/local/bundle
+    command: sh -c "[ -f .env ] || cp .env.example .env && bundle install && bundle exec ruby test_example.rb"
+
+volumes:
+  bundle-cache:

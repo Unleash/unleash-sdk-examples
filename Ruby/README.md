@@ -10,3 +10,9 @@ cp -n .env.example .env
 
 bundle exec ruby example.rb
 ```
+
+Or with Docker (no local Ruby required):
+
+```sh
+docker compose run --rm app
+```
