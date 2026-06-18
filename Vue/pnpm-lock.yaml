@@ -22,8 +22,8 @@ importers:
         specifier: ^1.50.0
         version: 1.60.0
       '@vitejs/plugin-vue':
-        specifier: ^5.1.4
-        version: 5.2.4(vite@8.0.16)(vue@3.5.38(typescript@6.0.3))
+        specifier: ^6.0.0
+        version: 6.0.7(vite@8.0.16)(vue@3.5.38(typescript@6.0.3))
       eslint:
         specifier: ^10.4.1
         version: 10.4.1
@@ -330,11 +330,11 @@ packages:
     peerDependencies:
       vue: ^3.2.45
 
-  '@vitejs/plugin-vue@5.2.4':
-    resolution: {integrity: sha512-7Yx/SXSOcQq5HiiV3orevHUFn+pmMB4cgbEkDYgnkUWb0WfeQ/wa2yFv6D5ICiCQOVpjA7vYDXrC7AGO8yjDHA==}
-    engines: {node: ^18.0.0 || >=20.0.0}
+  '@vitejs/plugin-vue@6.0.7':
+    resolution: {integrity: sha512-km+p+XdSz9Sxm5rqUbqcSfZYaAniKxWBj1KURl+Jr7UaPvvX7BmaWMdP69I5rrFDeQGyxAG7NXdc57vz+snhWg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^5.0.0 || ^6.0.0
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
 
   '@volar/language-core@2.4.28':
@@ -1159,8 +1159,9 @@ snapshots:
       unleash-proxy-client: 3.8.0
       vue: 3.5.38(typescript@6.0.3)
 
-  '@vitejs/plugin-vue@5.2.4(vite@8.0.16)(vue@3.5.38(typescript@6.0.3))':
+  '@vitejs/plugin-vue@6.0.7(vite@8.0.16)(vue@3.5.38(typescript@6.0.3))':
     dependencies:
+      '@rolldown/pluginutils': 1.0.1
       vite: 8.0.16
       vue: 3.5.38(typescript@6.0.3)
 
