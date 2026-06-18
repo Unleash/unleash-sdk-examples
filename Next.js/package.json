@@ -23,11 +23,12 @@
   },
   "packageManager": "pnpm@11.5.3+sha512.7ac1c919341c213a34dc0d02afb7143c5c26ac26ee8c4782deea821b8ac64d2134a081fd8941dae6e29bbb48f58dfc2b7fbceeccc07cb2f09d219d342a4969ed",
   "devDependencies": {
+    "@eslint/compat": "^2.1.0",
     "@playwright/test": "^1.0.0",
     "@types/node": "^25.9.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "eslint": "^9.39.4",
+    "eslint": "^10.0.0",
     "eslint-config-next": "^16.2.9",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.4",

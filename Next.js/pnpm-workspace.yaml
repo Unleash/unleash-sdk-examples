@@ -9,8 +9,8 @@ trustPolicyExclude:
 
 # The minimum age of a release to be considered for dependency installation.
 # The value is in minutes (1440 minutes = 1 day).
-# 2880 minutes = 2 days
-minimumReleaseAge: 2880
+# 10080 minutes = 7 days
+minimumReleaseAge: 10080
 minimumReleaseAgeIgnoreMissingTime: false
 minimumReleaseAgeExclude:
   - "@unleash/nextjs"
@@ -23,3 +23,4 @@ minimumReleaseAgeExclude:
   - "eslint-config-next"
   - "axe-core"
   - "caniuse-lite"
+  - "eslint@10.5.0"
