@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@unleash/nextjs':
         specifier: ^1.6.4
-        version: 1.6.4(next@16.2.9(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 1.6.7(next@16.2.9(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       next:
         specifier: ^16.2.9
         version: 16.2.9(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -561,8 +561,8 @@ packages:
     resolution: {integrity: sha512-QVLZu3ZPQEE+HICQyAMZ2yLQhxf0meY/wx6Hx14YcTNj13JB3qHlX3lJ02L3fLGHgERRH71kvYDwiXIguT3AjQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@unleash/nextjs@1.6.4':
-    resolution: {integrity: sha512-ZBZwehJ0jgOlSQchQ0DfjlQAdvQDVrZ+kM1nq2lVyfcblUAff0O14WBjrQjJcSHTqrr+BGbx/pBI5VRzkJjClA==}
+  '@unleash/nextjs@1.6.7':
+    resolution: {integrity: sha512-Aq2zyTJxsfQABKwpu/np8Uj3mg3q4u5/rTtn+UcyaMsDce6MPMMEKQhizNl6TTBXJI0WO1/vNsk00x0r5CPtWw==}
     hasBin: true
     peerDependencies:
       next: '>=12'
@@ -2442,7 +2442,7 @@ snapshots:
       '@typescript-eslint/types': 8.61.0
       eslint-visitor-keys: 5.0.1
 
-  '@unleash/nextjs@1.6.4(next@16.2.9(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@unleash/nextjs@1.6.7(next@16.2.9(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@next/env': 14.2.13
