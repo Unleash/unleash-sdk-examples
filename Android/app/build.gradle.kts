@@ -41,6 +41,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "37.0.0"
 }
 
 kotlin {
