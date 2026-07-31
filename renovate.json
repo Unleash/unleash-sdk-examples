@@ -22,13 +22,17 @@
       "internalChecksFilter": "strict"
     },
     {
-      "matchPackagePatterns": ["^unleash-", "^@unleash/", "^unleash_"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true,
       "autoApprove": true,
       "assignees": ["krzychukula"],
       "minimumReleaseAge": "0 days",
-      "internalChecksFilter": "strict"
+      "internalChecksFilter": "strict",
+      "matchPackageNames": [
+        "/^unleash-/",
+        "/^@unleash//",
+        "/^unleash_/"
+      ]
     }
   ]
 }
