@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@unleash/proxy-client-react':
         specifier: '*'
-        version: 6.0.0(react@19.2.7)(unleash-proxy-client@3.8.0)
+        version: 6.0.1(react@19.2.7)(unleash-proxy-client@3.8.0)
       react:
         specifier: ^19.0.0
         version: 19.2.7
@@ -319,8 +319,8 @@ packages:
     resolution: {integrity: sha512-8C71BQkGjiMmXtop7pHVJu1l2NNShFdkCyD6a2ezzs5vU/L3LRtb69EtcteFwz0mYMPzIgOw0n6OV4VBUWZd7A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@unleash/proxy-client-react@6.0.0':
-    resolution: {integrity: sha512-QyRsmRxcr0rYOKWQzovGFvqRhC4nTmjym+bQKSOn/2KsJ7zC9WNZF06M6TWoTjqPGEsiP4zqyEohu/9dYWPf8g==}
+  '@unleash/proxy-client-react@6.0.1':
+    resolution: {integrity: sha512-ghpI3mCs7KMKbry1TaRrkH2aIj+X3O6vaHw5isp3CIOguyN5dXcK5sPG7YOCr9pVcTT99wVGRFgpAwlLaCWLbA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -741,6 +741,11 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
+  use-sync-external-store@1.6.0:
+    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   vite@8.0.16:
     resolution: {integrity: sha512-h9bXPmJichP5fLmVQo3PyaGSDE2n3aPuomeAlVRm0JLmt4rY6zmPKd59HYI4LNW8oTK7tlTsuC7l/m7awx9Jcw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -1044,10 +1049,11 @@ snapshots:
       '@typescript-eslint/types': 8.65.0
       eslint-visitor-keys: 5.0.1
 
-  '@unleash/proxy-client-react@6.0.0(react@19.2.7)(unleash-proxy-client@3.8.0)':
+  '@unleash/proxy-client-react@6.0.1(react@19.2.7)(unleash-proxy-client@3.8.0)':
     dependencies:
       react: 19.2.7
       unleash-proxy-client: 3.8.0
+      use-sync-external-store: 1.6.0(react@19.2.7)
 
   '@vitejs/plugin-react@6.0.4(vite@8.0.16)':
     dependencies:
@@ -1414,6 +1420,10 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  use-sync-external-store@1.6.0(react@19.2.7):
+    dependencies:
+      react: 19.2.7
 
   vite@8.0.16:
     dependencies:
