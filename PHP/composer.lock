@@ -1988,16 +1988,16 @@
         },
         {
             "name": "unleash/client",
-            "version": "v2.9.284",
+            "version": "v2.10.184",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Unleash/unleash-php-sdk.git",
-                "reference": "310da6dde2dc24760166b47920eae710fcd1dd81"
+                "reference": "fb9b2532bea6e6832d62522d58bf1ddaa4173bb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Unleash/unleash-php-sdk/zipball/310da6dde2dc24760166b47920eae710fcd1dd81",
-                "reference": "310da6dde2dc24760166b47920eae710fcd1dd81",
+                "url": "https://api.github.com/repos/Unleash/unleash-php-sdk/zipball/fb9b2532bea6e6832d62522d58bf1ddaa4173bb5",
+                "reference": "fb9b2532bea6e6832d62522d58bf1ddaa4173bb5",
                 "shasum": ""
             },
             "require": {
@@ -2051,9 +2051,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Unleash/unleash-php-sdk/issues",
-                "source": "https://github.com/Unleash/unleash-php-sdk/tree/v2.9.284"
+                "source": "https://github.com/Unleash/unleash-php-sdk/tree/v2.10.184"
             },
-            "time": "2026-01-12T10:27:57+00:00"
+            "time": "2026-07-29T08:53:47+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
