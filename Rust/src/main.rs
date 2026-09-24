@@ -1,16 +1,14 @@
-use enum_map::Enum;
-use serde::{Deserialize, Serialize};
 use std::env;
 use dotenvy::dotenv;
 use std::error::Error;
 use std::time::Duration;
 use tokio::time::sleep;
-use unleash_api_client::client::ClientBuilder;
+use unleash_api_client::client::{ClientBuilder, FeatureKey};
 use unleash_api_client::Client;
 
-#[derive(Debug, Deserialize, Serialize, Enum, Clone)]
+#[derive(Debug, Clone, Copy, FeatureKey)]
 enum Flags {
-    #[serde(rename = "example-flag")] // TODO: Flag name
+    #[feature_name("example-flag")] // TODO: Flag name
     TestFlag,
 }
 
@@ -20,7 +18,7 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
     let api_url = env::var("UNLEASH_API_URL").expect("UNLEASH_API_URL not found");
     let token = env::var("UNLEASH_API_TOKEN").expect("UNLEASH_API_TOKEN not found");
 
-    let client: Client<Flags, reqwest::Client> = ClientBuilder::default()
+    let client: Client<Flags> = ClientBuilder::default()
         .interval(5000) // Polling & metrics interval - default 15000 (ms)
         .into_client(
             &api_url,
