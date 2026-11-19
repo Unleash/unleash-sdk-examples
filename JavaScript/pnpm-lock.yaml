@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       unleash-proxy-client:
-        specifier: 3.8.0
-        version: 3.8.0
+        specifier: 3.8.2
+        version: 3.8.2
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -1111,8 +1111,8 @@ packages:
     resolution: {integrity: sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==}
     engines: {node: '>=10'}
 
-  unleash-proxy-client@3.8.0:
-    resolution: {integrity: sha512-7+IMDM/t8sUojbYmOMoRW0SjD7+ShOrpI+vR1QWSv1Fnf7IxXLKp1dVhWnWyh9p4iyqFw4RXG9Iw5LHuBMV4aA==}
+  unleash-proxy-client@3.8.2:
+    resolution: {integrity: sha512-xwFk4Zq7mdZxWU69g9On1TT3VSARBm2c+U1oY6PbaBA+FZrODpUHw7xMhIg74Ai56w0RlPMZ4znzHZ3R9PBGpA==}
 
   update-browserslist-db@1.2.3:
     resolution: {integrity: sha512-Js0m9cx+qOgDxo0eMiFGEueWztz+d4+M3rGlmKPT+T4IS/jP4ylw3Nwpu6cpTTP8R1MAC1kF4VbdLt3ARf209w==}
@@ -2383,7 +2383,7 @@ snapshots:
 
   type-fest@0.20.2: {}
 
-  unleash-proxy-client@3.8.0:
+  unleash-proxy-client@3.8.2:
     dependencies:
       tiny-emitter: 2.1.0
 
