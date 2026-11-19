@@ -2,7 +2,7 @@ import os
 import time
 
 from dotenv import load_dotenv
-from UnleashClient import UnleashClient
+from UnleashClient import MetricsOptions, UnleashClient
 
 load_dotenv()
 
@@ -13,8 +13,8 @@ flag = "example-flag"
 client = UnleashClient(
     url=api_url,
     app_name="codesandbox-python",
-    custom_headers={'Authorization': api_token},
-    metrics_interval=1)
+    api_key=api_token,
+    metrics=MetricsOptions(interval=1))
 
 client.initialize_client()
 
